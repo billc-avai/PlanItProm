@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/settings_date_field_width"
+        android:layout_height="@dimen/settings_date_field_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/date_field_background">
+
+    <ImageButton
+            android:id="@+id/km_number_picker_minus_button"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_decrease_button"/>
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+            android:id="@+id/km_number_picker_value_edit"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:minWidth="@dimen/km_number_picker_value_min_width"
+            android:maxWidth="@dimen/km_number_picker_value_max_width"
+            android:text="@string/km_number_picker_value"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/date_field_big_text"
+            android:textSize="@dimen/settings_number_picker_text"
+            android:maxLines="@integer/km_number_picker_max_lines"
+            android:maxLength="@integer/km_number_picker_max_length"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:gravity="center"
+            android:background="@android:color/transparent"/>
+
+    <ImageButton
+            android:id="@+id/km_number_picker_plus_button"
+            android:layout_height="fill_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_increase_button"/>
+
+</LinearLayout>

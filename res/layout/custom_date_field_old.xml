@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="@dimen/settings_date_field_width"
+              android:layout_height="@dimen/settings_date_field_height"
+              android:orientation="horizontal"
+              android:background="@color/date_field_background">
+
+    <LinearLayout android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView android:id="@+id/day"
+               android:layout_width="fill_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:layout_marginRight="7dp"
+               android:textSize="@dimen/settings_date_field_small_text"
+               android:textColor="@color/date_field_small_text"
+               android:textStyle="bold"
+               android:gravity="bottom|right"
+               android:includeFontPadding="false"
+               android:text="FRI"/>
+
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView android:id="@+id/month"
+                  android:layout_width="fill_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:layout_marginRight="7dp"
+                  android:textSize="@dimen/settings_date_field_small_text"
+                  android:textColor="@color/date_field_small_text"
+                  android:textStyle="bold"
+                  android:gravity="top|right"
+                  android:includeFontPadding="false"
+                  android:text="JUL"/>
+    </LinearLayout>
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView android:id="@+id/number"
+              android:layout_width="0dp"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"
+              android:gravity="center|left"
+              android:textSize="@dimen/settings_date_field_big_text"
+              android:textColor="@color/date_field_big_text"
+              android:includeFontPadding="false"
+              android:text="26"/>
+</LinearLayout>

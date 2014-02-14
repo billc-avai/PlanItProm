@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/budget_pager_layout"
+            android:layout_alignParentTop="true"
+            style="@style/BudgetSlider">
+        <android.support.v4.view.ViewPager
+                android:id="@+id/budget_counter_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"/>
+
+        <com.sevendesign.planitprom.ui.widgets.PageControl
+                android:id="@+id/budget_counter_page_control"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"/>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/budget_pager_layout"
+			android:background="@color/background_light1" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/budget_list_title_height"
+                android:paddingLeft="@dimen/budget_list_padding_left"
+                android:paddingRight="@dimen/budget_list_padding_right"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/AppBaseTheme.ListHeader">
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/budget_item_weight"
+                    android:gravity="center_vertical"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="@dimen/budget_list_title_padding_left"
+                    android:singleLine="true"
+                    android:textSize="@dimen/budget_list_title"
+                    android:text="@string/budget_item_title"
+                    style="@style/AppBaseTheme.ListHeader"/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/budget_budgeted_weight"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/budget_list_title"
+                    android:text="@string/budget_budgeted_title"
+                    style="@style/AppBaseTheme.ListHeader"
+                    />
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/budget_actual_weight"
+                    android:paddingLeft="5dp"
+                    android:gravity="center_vertical|right"
+                    android:singleLine="true"
+                    android:textSize="@dimen/budget_list_title"
+                    android:text="@string/budget_actual_title"
+                    style="@style/AppBaseTheme.ListHeader"
+                    />
+
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/budget_items_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:dividerHeight="@dimen/budget_list_divider_height"
+                android:cacheColorHint="@color/budget_cache_color_hint"
+                android:divider="@color/budget_list_divider"
+                >
+        </ListView>
+
+    </LinearLayout>
+</RelativeLayout>

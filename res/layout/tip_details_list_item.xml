@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/tip_details_list_item_padding_left"
+        android:paddingRight="@dimen/tip_details_list_item_padding_right"
+        android:minHeight="@dimen/tip_details_list_item_row_min_height"
+        android:orientation="horizontal" >
+
+    <ImageView
+            android:layout_width="@dimen/tip_details_list_image_width"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tip_details_point"
+            android:paddingTop="@dimen/tip_details_list_image_padding_top"
+            android:scaleType="center"
+            />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/tip_details_list_title_padding_top"
+        android:paddingBottom="@dimen/tip_details_list_title_padding_bottom"
+        android:paddingLeft="@dimen/tip_details_list_title_padding_left"
+        android:orientation="vertical"
+        >
+        
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/tip_details_list_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tip_details_list_item_title"
+            style="@style/AppBaseTheme.TextView.Title.InvertColor"
+            android:text="title"
+            />
+        
+	    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/tip_details_list_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tip_details_list_item_title"
+            style="@style/AppBaseTheme.TextView.InvertColor"
+            android:text="content"
+            />
+    
+    </LinearLayout>
+
+</LinearLayout>

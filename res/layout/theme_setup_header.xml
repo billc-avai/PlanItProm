@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/theme_setup_list_header_margin_top"
+            android:layout_marginBottom="@dimen/theme_setup_list_header_margin_bottom"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/theme_setup_list_header_text_size"
+            android:layout_marginLeft="@dimen/theme_setup_list_row_padding_left"
+            android:layout_marginRight="@dimen/theme_setup_list_row_padding_right"
+            android:text="@string/fragments_theme_setup_header"/>
+</LinearLayout>

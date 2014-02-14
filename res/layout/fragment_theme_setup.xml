@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              >
+
+    <ListView
+            android:id="@+id/theme_setup_grid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:overScrollMode="never"
+            android:dividerHeight="@dimen/theme_setup_list_row_divider"/>
+</LinearLayout>

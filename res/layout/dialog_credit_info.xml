@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/popup_margin_left"
+                android:paddingRight="@dimen/popup_margin_right"
+                android:paddingTop="@dimen/popup_margin_top"
+                android:paddingBottom="@dimen/popup_margin_bottom"
+                android:background="@color/dialog_background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        	android:padding="@dimen/alert_dialog_credit_padding"
+        	android:descendantFocusability="beforeDescendants"
+        	android:focusableInTouchMode="true"
+            android:layout_centerInParent="true"
+            android:background="@color/background_light1">
+            
+			<RelativeLayout
+            	android:layout_height="wrap_content"
+            	android:layout_width="fill_parent" >
+            	
+	            <ImageView android:id="@+id/close"
+	                android:layout_width="@dimen/close_size"
+	                android:layout_height="@dimen/close_size"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:src="@drawable/selector_button_close"/>
+
+			</RelativeLayout>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                android:id="@+id/title3"
+                style="@style/AppBaseTheme.TextView.Title.InvertColor"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/title_padding_left"
+                android:text="@string/alert_dialog_credit_three_month_title"
+                />
+            
+            <View
+		       android:layout_height="1px"
+		       android:layout_width="match_parent"
+		       android:background="@color/fiesta_red"/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                android:id="@+id/value3"
+                style="@style/AppBaseTheme.TextView.InvertColor"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/alert_dialog_credit_fields_margin"
+                android:layout_marginBottom="@dimen/alert_dialog_credit_fields_margin"/>
+
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView 
+                android:id="@+id/title6"
+                style="@style/AppBaseTheme.TextView.Title.InvertColor"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/title_padding_left"
+                android:layout_marginTop="@dimen/alert_dialog_credit_fields_block_margin_top"
+                android:text="@string/alert_dialog_credit_six_month_title"
+                />
+            
+			<View
+		       android:layout_height="1px"
+		       android:layout_width="match_parent"
+		       android:background="@color/fiesta_red"/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                 android:id="@+id/value6"
+                style="@style/AppBaseTheme.TextView.InvertColor"
+                android:focusableInTouchMode="false"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/alert_dialog_credit_fields_margin"
+                android:layout_marginBottom="@dimen/alert_dialog_credit_fields_margin"/>
+
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView 
+                android:id="@+id/title12"
+                style="@style/AppBaseTheme.TextView.Title.InvertColor"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/title_padding_left"
+                android:layout_marginTop="@dimen/alert_dialog_credit_fields_block_margin_top"
+                android:text="@string/alert_dialog_credit_twelve_month_title"
+                />
+
+			<View
+		       android:layout_height="1px"
+		       android:layout_width="match_parent"
+		       android:background="@color/fiesta_red"/>
+            
+            
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                android:id="@+id/value12"
+                style="@style/AppBaseTheme.TextView.InvertColor"
+                android:focusableInTouchMode="false"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/alert_dialog_credit_fields_margin"
+                android:layout_marginBottom="@dimen/alert_dialog_credit_fields_margin"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

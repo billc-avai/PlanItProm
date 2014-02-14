@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_medium">
+
+    <ImageView
+            android:id="@+id/tip_details_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indo_trip_budget_pager_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg1"/>
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/tip_details_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/tip_details_title_padding_left"
+            android:paddingRight="@dimen/tip_details_title_padding_right"
+            style="@style/AppBaseTheme.TextView.Header"
+            />
+
+    <ListView
+            android:id="@+id/tip_details_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:listSelector="@color/tip_details_list_selector"
+            android:cacheColorHint="@color/tip_details_list_cache_color_hint"
+            android:background="@color/background_light1"
+            android:divider="@color/tip_details_list_divider"
+            />
+
+</LinearLayout>

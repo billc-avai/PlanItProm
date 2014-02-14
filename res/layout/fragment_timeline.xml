@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_light1"
+        >
+
+    <ImageView
+            android:id="@+id/timeline_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/indo_trip_budget_pager_height"
+            android:scaleType="fitXY"
+            android:background="@drawable/timeline"/>
+
+    <ListView
+            android:id="@+id/timeline_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:listSelector="@color/timeline_list_selector"
+            android:cacheColorHint="@color/timeline_list_cache_color_hint"
+            android:divider="@color/timeline_list_divider"
+            android:dividerHeight="1dp"/>
+</LinearLayout>

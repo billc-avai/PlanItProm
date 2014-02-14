@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gallery_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalSpacing="@dimen/gallery_grid_vertical_divider"
+        android:horizontalSpacing="@dimen/gallery_grid_horizontal_divider"
+        android:paddingTop="@dimen/gallery_grid_padding_top"
+        android:paddingLeft="@dimen/gallery_grid_padding_left"
+        android:paddingBottom="@dimen/gallery_grid_padding_bottom"
+        android:overScrollMode="never"
+        android:numColumns="3"
+        android:background="@color/background_light1"/>

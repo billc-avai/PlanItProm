@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_medium"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/settings_padding_bottom"
+			android:paddingLeft="@dimen/settings_padding_left"
+			android:paddingRight="@dimen/settings_padding_right"
+            >
+
+            <LinearLayout
+                android:id="@+id/settings_top_block"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				>
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:text="@string/settings_screen_budget_title"
+                    />
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/budgetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_screen_budget_hint"
+                    />
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
+                    android:text="@string/settings_screen_budget_limit_title"
+                    />
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/budgetLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_screen_budget_limit_hint"
+                    android:inputType="numberDecimal"
+                    android:longClickable="false"
+                    />
+
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:text="@string/settings_date_title"
+                    />
+
+                <com.sevendesign.planitprom.ui.customviews.DateField
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/eventDate"
+                    android:gravity="center"
+                    android:padding="1px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_padding_left"
+                    />
+                
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:text="@string/settings_gender_title"
+                    />
+                
+                <com.sevendesign.planitprom.ui.customviews.CustomFontEditText 
+                    android:id="@+id/gender_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_gender_hint"
+                    style="@style/AppBaseTheme.EditText"
+                    />
+
+               <LinearLayout 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_vertical"
+                   android:layout_marginTop="@dimen/settings_row_margin">
+                
+	                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+	                    style="@style/AppBaseTheme.TextView.Title"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:paddingLeft="@dimen/title_padding_left"
+	                    android:text="@string/settings_add_to_calendar_title"
+	                    />
+	                
+	                <com.sevendesign.planitprom.ui.widgets.KMSwitch
+	                    android:id="@+id/calendarSwitcher"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_marginLeft="@dimen/settings_switcher_margin"
+	                    />
+                
+               </LinearLayout>
+           </LinearLayout>
+        </RelativeLayout>
+        
+    </ScrollView>
+    
+    <LinearLayout 
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentBottom="true"
+        >
+        
+    	<include layout="@layout/footer"/>
+    
+    </LinearLayout>
+    
+</RelativeLayout>

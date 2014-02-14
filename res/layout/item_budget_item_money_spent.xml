@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp">
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/counter_item_days_remain_title"
+            android:textSize="@dimen/counter_item_days_remain_title"
+            android:layout_marginBottom="5dp" />
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/counter_item_days_remain_value_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/counter_item_days_remain_value"/>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/popup_margin_left"
+                android:paddingRight="@dimen/popup_margin_right"
+                android:paddingTop="@dimen/popup_margin_top"
+                android:paddingBottom="@dimen/popup_margin_bottom"
+                android:background="@color/dialog_background">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="15dp"
+            android:background="@color/dialog_body_background">
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="15dp"
+                style="@style/AppBaseTheme.TextView.Title"
+                android:text="@string/settings_confirm_title"/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView android:id="@+id/name"
+                android:layout_below="@id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:lines="2"
+                android:singleLine="false"
+                style="@style/AppBaseTheme.TextView.Message"
+                android:text="@string/settings_reset_confirm"/>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name">
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontButton android:id="@+id/reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    style="@style/AppBaseTheme.Button.Dark"
+                    android:text="@string/settings_reset_button_title"/>
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontButton android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    style="@style/AppBaseTheme.Button.Dark"
+                    android:text="@string/settings_cancel_button_title"/>
+            </LinearLayout>
+
+            <ImageView android:id="@+id/close"
+                android:layout_width="@dimen/close_size"
+                android:layout_height="@dimen/close_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/selector_button_close"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

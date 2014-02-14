@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fiesta_red">#D84942</color>
+    <color name="fiesta_red_pressed">#96322E</color>
+    
+    <color name="background_light1">#E3DFD1</color>
+    <color name="background_light2">#F8F7ED</color>
+    <color name="background_medium">#54605C</color>
+    <color name="background_dark">#363531</color>
+    
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_medium">#54605C</color>
+    <color name="text_dark">#000000</color>
+    <color name="text_highlighted">@color/fiesta_red</color>
+    
+    <color name="bullet_not_selected">#E3DFD1</color>
+    <color name="bullet_selected">#D84942</color>
+    
+    <color name="slider_background">#58000000</color>
+    <color name="dialog_background">#66000000</color>
+    <color name="dialog_body_background">#EEF8F8F8</color>
+    <color name="background_privacy_policy">#FFFFFF</color>
+    <color name="text_color_privacy_policy">#0055FF</color>
+    <color name="instructions_text">#373737</color>
+    <color name="action_bar_title_color">#373737</color>
+    <color name="actionbar_background">#8ED5B4</color>
+    <color name="km_switch_selected">#1E5CC2</color>
+    <color name="km_switch_unselected">#E9EDEE</color>
+    <color name="km_switch_text_color">#ffffff</color>
+    <color name="setup_background">#BBF8F8FF</color>
+    <color name="calculator_background">#BBF8F8FF</color>
+    <color name="credit_background">#BBF8F8FF</color>
+    <color name="budget_background">#BBF8F8FF</color>
+    <color name="category_add_background">#BBF8F8FF</color>
+    <color name="item_budget_background">#BBF8F8FF</color>
+    <color name="gallery_details_background">#BBF8F8FF</color>
+    <color name="timeline_background">#BBF8F8FF</color>
+
+    <color name="title_background">#FFFFFF</color>
+    <color name="separator_horizontal">#aaaaaa</color>
+    <color name="item_text_not_active">#aaaaaa</color>
+    <color name="message_text">#000000</color>
+    <color name="message_text_invert_color">#cccccc</color>
+
+    <!-- Dialogs -->
+    <color name="alert_dialog_info_background">#494949</color>
+    <color name="dialog_container_background">#DD000000</color>
+
+    <!-- Timeline -->
+    <color name="timeline_list_selector">#00000000</color>
+    <color name="timeline_list_cache_color_hint">#00000000</color>
+    <color name="timeline_image_background">#F9666666</color>
+    <color name="timeline_list_divider">#aaaaaa</color>
+
+    <!-- Tips -->
+    <color name="tips_list_selector">#00000000</color>
+    <color name="tips_list_cache_color_hint">#00000000</color>
+    <color name="tips_list_item_title">#000000</color>
+    <color name="tips_list_divider">#92acb8</color>
+
+    <!-- Tip Details -->
+    <color name="tip_details_title">#222222</color>
+    <color name="tip_details_title_background">#FFFFFF</color>
+    <color name="tip_details_list_item_title">#52595c</color>
+    <color name="tip_details_list_selector">#00000000</color>
+    <color name="tip_details_list_cache_color_hint">#00000000</color>
+    <color name="tip_details_list_item_background">#BBF8F8FF</color>
+    <color name="tip_details_list_divider">#BBF8F8FF</color>
+
+    <!-- Date Field -->
+    <color name="date_field_background">#F7FAFB</color>
+    <color name="date_field_border">#000000</color>
+    <color name="date_field_small_text">#4D4D4D</color>
+    <color name="date_field_big_text">#4D4D4D</color>
+    <color name="km_switch_background">#4D4D4D</color>
+
+    <!-- Indo Trip Budget -->
+    <color name="button_grey">#666</color>
+    <color name="button_grey_light">#999</color>
+
+    <!-- button default -->
+    <color name="button_text">#FFFFFF</color>
+    <color name="button_text_pressed">#FFFFFF</color>
+    <color name="button_background">@color/fiesta_red</color>
+    <color name="button_background_pressed">@color/fiesta_red_pressed</color>
+    
+    
+    <!-- button light -->
+    <color name="button_light">@color/background_light2</color>
+    <color name="button_light_pressed">#FFFFFF</color>
+    <color name="button_light_text">@color/text_medium</color>
+    <color name="button_light_text_pressed">@color/text_highlighted</color>
+
+    <!-- Budget -->
+    <color name="budget_list_selector">#00000000</color>
+    <color name="budget_cache_color_hint">#00000000</color>
+    <color name="budget_list_divider">#92acb8</color>
+    <color name="budget_list_title_background">#FFFFFF</color>
+    <color name="budget_list_title">#222222</color>
+    <color name="budget_list_item_item_title">#222222</color>
+    <color name="budget_list_item_item_title_pressed">#1e5cc2</color>
+    <color name="budget_list_item_background_pressed">#FFFFFF</color>
+    <color name="budget_list_item_actual_title_exceed">#a5232a</color>
+    <color name="budget_list_item_actual_title_not_exceed">#1f9e3a</color>
+    <color name="budget_list_item_value">#222222</color>
+
+    <!-- Indo Trip Budget Item Total -->
+    <color name="counter_item_total_budget_spent_title">#1f9e3a</color>
+    <color name="counter_item_total_budget_spent_value">#1f9e3a</color>
+    <color name="counter_item_total_budget_budgeted_title">#222222</color>
+    <color name="counter_item_total_budget_budgeted_value">#222222</color>
+    <!-- Indo Trip Budget Item Daily -->
+    <color name="counter_item_daily_budget_title">#222222</color>
+    <color name="counter_item_daily_spent_value">#222222</color>
+    <color name="counter_item_daily_spent_per_day">#222222</color>
+    <!-- Indo Trip Budget Item Days Remain -->
+    <color name="counter_item_days_remain_title">#222222</color>
+    <color name="counter_item_days_remain_value">#222222</color>
+
+    <!-- Item Budget -->
+    <color name="item_budget_counter_item_title">@color/android:white</color>
+    <color name="item_budget_counter_item_value">@color/android:white</color>
+
+    <!-- Category Add -->
+    <color name="category_add_remain_budget_title">#222222</color>
+    <color name="category_add_remain_budget_value">#222222</color>
+
+    <!-- Button Dark -->
+    <color name="button_dark_background">#e2666666</color>
+    <color name="button_dark_background_pressed">#F9666666</color>
+    <color name="button_dark_text">#FFFFFF</color>
+    <color name="button_dark_text_pressed">#FFFFFF</color>
+
+    <!-- EditText -->
+    <color name="edit_text_value">#000000</color>
+    <color name="edit_text_hint">#aaaaaa</color>
+    <color name="edit_text_value_invert_color">#cccccc</color>
+    <color name="edit_text_hint_invert_color">#cccccc</color>
+    <color name="edit_text_background_color">#FFFFFF</color>
+
+    <!-- TextViewTitle -->
+    <color name="text_view_title">#000000</color>
+    <color name="text_view_title_invert_color">#ffffff</color>
+
+    <!-- TextViewHeader -->
+    <color name="text_view_header">#222222</color>
+    <color name="text_view_header_background">#FFFFFF</color>
+
+    <color name="edit_text_budget_exceed">#cc0000</color>
+
+</resources>

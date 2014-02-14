@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/setup_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/policy">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/settings_top_block"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/settings_padding_left"
+                android:paddingRight="@dimen/settings_padding_right">
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:text="@string/settings_screen_budget_title"/>
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/budgetName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_screen_budget_hint"
+                    />
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:text="@string/settings_screen_budget_limit_title"/>
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/budgetLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/settings_screen_budget_limit_hint"
+                    android:inputType="numberDecimal"
+                    android:longClickable="false"
+                    />
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/title_padding_left"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:text="@string/settings_screen_travel_period_title"
+                    />
+
+                <Spinner
+                    style="@style/AppBaseTheme.Spinner"
+                    android:id="@+id/travelPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_countersBlock"
+                android:layout_below="@id/settings_top_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/settings_padding_left"
+                android:paddingRight="@dimen/settings_padding_right">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:orientation="vertical">
+
+                    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                        style="@style/AppBaseTheme.TextView.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/title_padding_left"
+                        android:text="@string/settings_depart_title"/>
+
+                    <com.sevendesign.planitprom.ui.customviews.DateField
+                        android:id="@+id/eventDate"
+                        android:gravity="center"
+                        android:padding="1px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/title_padding_left"
+                        android:background="@color/date_field_border"/>
+
+                    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                        style="@style/AppBaseTheme.TextView.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/title_padding_left"
+                        android:layout_marginTop="@dimen/settings_row_margin"
+                        android:text="@string/settings_adults_title"/>
+
+                    <com.sevendesign.planitprom.ui.widgets.KMNumberPicker
+                        android:id="@+id/settings_adults_picker"
+                        android:padding="1px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/title_padding_left"
+                        android:background="@color/date_field_border"/>
+
+                    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                        style="@style/AppBaseTheme.TextView.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/title_padding_left"
+                        android:layout_marginTop="@dimen/settings_row_margin"
+                        android:text="@string/settings_add_to_calendar_title"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/settings_row_margin"
+                    android:orientation="vertical">
+                    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                        style="@style/AppBaseTheme.TextView.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/settings_return_title"
+                        />
+                    <com.sevendesign.planitprom.ui.customviews.DateField
+                        android:id="@+id/returnDate"
+                        android:gravity="center"
+                        android:padding="1px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/date_field_border"
+                        />
+
+
+                    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                        style="@style/AppBaseTheme.TextView.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/settings_row_margin"
+                        android:text="@string/settings_children_title"/>
+
+                    <com.sevendesign.planitprom.ui.widgets.KMNumberPicker
+                        android:id="@+id/settings_children_picker"
+                        android:padding="1px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/date_field_border"/>
+
+                    <com.sevendesign.planitprom.ui.widgets.KMSwitch
+                        android:id="@+id/calendarSwitcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/settings_switcher_margin"
+                        android:layout_marginTop="@dimen/settings_row_margin"
+                        android:padding="1px"
+                        android:background="@color/km_switch_background"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_buttonsBlock"
+                android:layout_below="@id/settings_countersBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+
+                android:paddingLeft="@dimen/settings_padding_left"
+                android:paddingRight="@dimen/settings_padding_right">
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontButton android:id="@+id/reset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/AppBaseTheme.Button.Grey.Light"
+                    android:text="@string/settings_reset_button_title"/>
+
+                <com.sevendesign.planitprom.ui.customviews.CustomFontButton android:id="@+id/changeTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    style="@style/AppBaseTheme.Button.Grey"
+                    android:text="@string/settings_theme_button_title"/>
+            </LinearLayout>
+
+            <View
+                android:layout_below="@id/settings_buttonsBlock"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/policy"
+            style="@style/Policy"/>
+</RelativeLayout>

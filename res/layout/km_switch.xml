@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res/com.sevendesign.planitprom"
+    >
+    
+<RelativeLayout
+        android:id="@+id/km_switch_body_linear_layout"
+        android:layout_width="@dimen/settings_switcher_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/km_switch_background"
+        android:padding="@dimen/km_switch_padding"
+        >
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/km_switch_on_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/km_switch_button_padding_side"
+            android:paddingRight="@dimen/km_switch_button_padding_side"
+            android:text="@string/km_switch_on"
+            android:textSize="@dimen/km_switch_text"
+            android:textColor="@color/km_switch_text_color"
+            android:background="@drawable/km_switch_button_background"
+            app:custom_font="@string/custom_font_light"/>
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/km_switch_off_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/km_switch_button_padding_side"
+            android:paddingRight="@dimen/km_switch_button_padding_side"
+            android:gravity="center"
+            android:textColor="@color/km_switch_text_color"
+            android:textSize="@dimen/km_switch_text"
+            android:text="@string/km_switch_off"
+            android:background="@drawable/km_switch_button_background"
+            app:custom_font="@string/custom_font_light"/>
+</RelativeLayout>
+
+</FrameLayout>

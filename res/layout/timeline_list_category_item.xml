@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/timeline_list_category_padding_left"
+        android:paddingRight="@dimen/timeline_list_category_padding_right"
+        android:minHeight="@dimen/timeline_list_category_row_min_height"
+        android:orientation="vertical"
+        android:background="@color/background_light2"
+        >
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/timeline_list_category_title_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/timeline_list_category_title_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/timeline_list_title_padding_left"
+            style="@style/AppBaseTheme.ListHeader"
+            />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/timeline_list_point_padding_left"
+        android:paddingRight="@dimen/timeline_list_point_padding_right"
+        android:paddingTop="@dimen/timeline_list_point_padding_top"
+        android:paddingBottom="@dimen/timeline_list_point_padding_bottom"
+        >
+
+    <CheckBox
+            android:id="@+id/timeline_list_point_check"
+            style="@style/AppBaseTheme.CompoundButton.CheckBox"
+            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/timeline_list_checkbox_width"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/timeline_list_point_title_text"
+            android:text="@null"
+            />
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/timeline_list_point_title_text"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/timeline_list_point_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			style="@style/AppBaseTheme.TextView.InvertColor"
+
+            />
+
+</RelativeLayout>

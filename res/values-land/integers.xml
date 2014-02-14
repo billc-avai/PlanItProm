@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="keyboard_rows_count">3</integer>
+    <integer name="keyboard_columns_count">6</integer>
+    <integer name="keyboard_count">2</integer>
+</resources>

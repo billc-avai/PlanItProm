@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:background="@color/background_medium"
+        >
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" >
+
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:textSize="@dimen/counter_item_total_budget_spent_title"
+                  android:text="@string/counter_item_total_budget_spent_title"
+                  android:textColor="@color/text_light"
+                  />
+
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                android:id="@+id/counter_item_total_spent_value_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/counter_item_total_budget_spent_value"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/text_light"
+                />
+
+    </LinearLayout>
+
+    <com.sevendesign.planitprom.ui.widgets.HorizontalProgressBar
+            style="@style/AppBaseTheme.ProgressBarHorizontal"
+            android:id="@+id/counter_item_total_budget_spent_progress"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_marginBottom="5dp"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            >
+
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:textSize="@dimen/counter_item_total_budget_budgeted_title"
+			android:text="@string/counter_item_total_budget_budgeted_title"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:textColor="@color/text_light"
+			/>
+
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView 
+            android:id="@+id/counter_item_total_budget_budgeted_value_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/counter_item_total_budget_budgeted_value"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_light"
+            />
+    </LinearLayout>
+
+</LinearLayout>

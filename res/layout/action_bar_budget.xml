@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+        <ImageButton android:id="@+id/addCategoryButton"
+                android:layout_toLeftOf="@+id/faqButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/action_bar_button_padding"
+                android:src="@drawable/selector_add_button"
+                android:background="@android:color/transparent"/>
+
+        <ImageButton android:id="@+id/faqButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/action_bar_faq_button_padding_right"
+                android:paddingLeft="@dimen/action_bar_faq_button_padding_left"
+                android:paddingTop="@dimen/action_bar_faq_button_padding_bottom"
+                android:paddingBottom="@dimen/action_bar_faq_button_padding_top"
+                android:layout_centerVertical="true"
+                android:src="@drawable/selector_faq_button"
+                android:background="@android:color/transparent"/>
+
+</RelativeLayout>

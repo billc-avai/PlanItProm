@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlanitProm</string>
+    <string name="app_photos_directory">.planitprom</string>
+    <string name="fragments_theme_setup_title">Setup</string>
+    <string name="fragments_theme_setup_header">SELECT A THEME</string>
+    <string name="fragments_settings_title">Setup</string>
+    <string name="fragments_prom_budget_title">Plan\'it Prom</string>
+    <string name="category_zero_value">—</string>
+    
+    <!-- Fonts -->
+    <string name="custom_font_light">Vitesse-Light.otf</string>
+    <string name="custom_font_light_italic">Vitesse-LightItalic.otf</string>
+    <string name="custom_font_medium">Vitesse-Medium.otf</string>
+    <string name="custom_font_medium_italic">Vitesse-MediumItalic.otf</string>
+    <string name="custom_font_bold">Vitesse-Bold.otf</string>
+    <string name="custom_font_bold_italic">Vitesse-BoldItalic.otf</string>
+
+    <!-- Bottom widgets -->
+    <string name="instructions_title"><u>Privacy Policy</u></string>
+
+    <!-- Counter item -->
+    <string name="counter_item_total_budget_spent_title">SPENT</string>
+    <string name="counter_item_total_budget_budgeted_title">BUDGETED</string>
+    <string name="counter_item_daily_budget_title">DAILY TRAVEL BUDGET</string>
+    <string name="counter_item_daily_budget_per_day">/day</string>
+    <string name="counter_item_days_remain_title">DAYS TILL PROM</string>
+
+    <!-- Prom Budget -->
+    <string name="prom_budget_budget_button">Budget</string>
+    <string name="prom_budget_calculator_button">Calculator</string>
+    <string name="prom_budget_tips_button">Tips</string>
+    <string name="prom_budget_timeline_button">Timeline</string>
+    <string name="prom_budget_gallery_button">Photo Gallery</string>
+    <string name="prom_budget_currency">$</string>
+
+    <!-- Calculator -->
+    <string name="calculator_tag_price_title">PRICE</string>
+    <string name="calculator_tag_price_hint">Enter Tag Price</string>
+    <string name="calculator_sales_tax_title">TAX RATE</string>
+    <string name="calculator_sales_tax_hint">Enter Sales Tax (%)</string>
+    <string name="calculator_discount_title">DISCOUNT/\nCOUPON</string>
+    <string name="calculator_discount_hint">Enter Discounts (%)</string>
+    <string name="calculator_tip_title">TIP</string>
+    <string name="calculator_tip_hint">Enter Any Tip</string>
+    <string name="calculator_calculate_title">Calculate</string>
+    <string name="calculator_total_title">TOTAL COST</string>
+    <string name="calculator_credit_hint">Some stores allow you to purchase items on credit. Tap here to see the true costs of buying on credit.</string>
+    <string name="calculator_credit_title">Buying On Credit?</string>
+
+    <!-- Credit -->
+    <string name="credit_total_cost_title">ITEM COST</string>
+    <string name="credit_total_cost_hint">Enter Total Cost</string>
+    <string name="credit_item_rate_title">INSERT \nRATE</string>
+    <string name="credit_card_rate_hint">Card APR (%)</string>
+    <string name="credit_calculate_title">Calculate</string>
+    <string name="credit_credit_hint">If you do not pay off your credit balance every month, you will need to pay interest on your purchases. Tap the button to see the total cost of your purchase if you wait to 3 month, 6 month or 12 month to pay it off in full.</string>
+
+    <string name="fragments_budget_title">Budget</string>
+    <string name="fragments_calculator_title">Calculator</string>
+    <string name="fragments_timeline_title">Timeline</string>
+    <string name="fragments_tips_title">Tips</string>
+    <string name="fragments_photo_gallery_title">Photo Gallery</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Dialogs -->
+    <string name="alert_dialog_title_instructions">INSTRUCTIONS</string>
+    <string name="alert_dialog_message_credit_instructions">Enter the price of your item and your lender/store\'s annual interest rate below to determine the true costs of buying with credit.</string>
+    <string name="alert_dialog_credit_three_month_title">3 MONTH TOTAL</string>
+    <string name="alert_dialog_credit_six_month_title">6 MONTH TOTAL</string>
+    <string name="alert_dialog_credit_twelve_month_title">12 MONTH TOTAL</string>
+    <string name="alert_dialog_message_item_budget_instructions">To avoid overspending, it’s important to have a budget for every prom item. A recommended budget is provided for your reference. Before you start shopping, enter the amount you have budgeted for this item. Then, while shopping, track your actual cost in the boxes below.\n\nTo see credit calculations and cost saving tips, tap on the buttons at the bottom of the screen.</string>
+    <string name="alert_dialog_new_budget_name_title">ITEM NAME</string>
+    <string name="alert_dialog_new_budget_done_title">Done</string>
+    <string name="alert_dialog_message_budget_instructions">Prom can be very expensive if you don’t have a budget. Use this budget calculator to plan your expenses and track actual costs while shopping. Click on each item for recommended budgets, credit calculations, and cost-saving tips.\n\nOnce you enter your total budget and expenses, see where you fall on the Budget Health Meter. Keep your Budget Health Meter green; if you find yourself too far in red, you’ll need to cut back on costs in other areas.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_confirm_title">Confirm</string>
+    <string name="settings_cancel_button_title">CANCEL</string>
+    <string name="settings_reset_button_title">RESET</string>
+    <string name="settings_theme_button_title">CHANGE THEME</string>
+    <string name="settings_reset_confirm">Do you really want to reset\n application content?</string>
+
+    <array name="event_name_array">
+        <item>Prom</item>
+    </array>
+    
+    <!-- date in dd/mm. Number of items must be same as in suggested_travel_array -->
+    <array name="suggested_travel_depart_date_array">
+        <item>01/06</item>
+        <item>24/12</item>
+        <item>01/08</item>
+    </array>
+    <!-- date in dd/mm. Number of items must be same as in suggested_travel_array -->
+    <array name="suggested_travel_return_date_array">
+        <item>31/07</item>
+        <item>31/12</item>
+        <item>31/08</item>
+    </array>
+    
+    <string-array name="settings_gender_array">
+        <item>Female</item>
+        <item>Male</item>
+    </string-array>
+
+    <string name="settings_screen_budget_title">NAME</string>
+    <string name="settings_actionbar_save_text">DONE</string>
+    <string name="settings_screen_budget_hint">Enter Your Name</string>
+    <string name="settings_screen_budget_limit_title">YOUR BUDGET</string>
+    <string name="settings_screen_budget_limit_hint">Enter Your Prom Spending Limit</string>
+    <string name="settings_screen_travel_period_title">SUGGESTED TRAVEL</string>
+    <string name="settings_screen_travel_period_hint">Select a Travel Period</string>
+    <string name="settings_depart_title">DEPART</string>
+    <string name="settings_date_title">PROM DATE</string>
+    <string name="settings_date_hint">Enter The Date of Your Prom</string>
+    <string name="settings_return_title">RETURN</string>
+    <string name="settings_adults_title">ADULTS</string>
+    <string name="settings_gender_title">GENDER</string>
+    <string name="settings_gender_hint">Select Your Gender</string>
+    <string name="settings_children_title">CHILDREN</string>
+    <string name="settings_add_to_calendar_title">ADD TO CALENDAR</string>
+
+    <!-- Gallery details -->
+    <string name="gallery_details_name_title">ITEM</string>
+    <string name="gallery_details_item_name_hint">Enter Name</string>
+    <string name="gallery_details_cost_title">COST</string>
+    <string name="gallery_details_cost_hint">Enter Amount</string>
+    <string name="gallery_details_merchant_name_title">MERCHANT</string>
+    <string name="gallery_details_merchant_name_hint">Enter Sellers Name</string>
+    <string name="gallery_details_notes_title">NOTES</string>
+    <string name="gallery_details_notes_hint">Enter Additional Info</string>
+    <string name="gallery_details_date_title">DATE</string>
+    <string name="gallery_details_delete_title">Delete Item</string>
+
+    <!-- Number picker -->
+    <string name="km_number_picker_value">0</string>
+
+    <!-- Switch -->
+    <string name="km_switch_on">ON</string>
+    <string name="km_switch_off">OFF</string>
+
+    <!-- Category Add -->
+    <string name="category_add_remain_budget_title">REMAINING IN TOTAL BUDGET</string>
+    <string name="category_add_take_picture_title">Take Picture</string>
+    <string name="category_add_delete_title">Delete Item</string>
+    <string name="category_add_item_name_title">NAME</string>
+    <string name="category_add_item_name_hint">Enter Name</string>
+    <string name="category_add_budgeted_title">BUDGETED</string>
+    <string name="category_add_budgeted_hint">Enter Amount</string>
+    <string name="category_add_actual_title">ACTUAL</string>
+    <string name="category_add_actual_hint">Enter Actual Cost</string>
+    <string name="category_add_category_hint">Enter Item Name</string>
+
+    <!-- Budget -->
+    <string name="budget_item_title">ITEM</string>
+    <string name="budget_budgeted_title">BUDGETED</string>
+    <string name="budget_actual_title">ACTUAL</string>
+
+    <!-- Item budget -->
+    <string name="item_budget_budget_remaining_title">TOTAL BUDGET REMAINING</string>
+    <string name="item_budget_money_spent_title">ACTUAL MONEY SPENT</string>
+    <string name="item_budget_take_picture">Take Picture</string>
+    <string name="item_budget_budgeted_title">BUDGETED</string>
+    <string name="item_budget_budgeted_hint">Enter Amount</string>
+    <string name="item_budget_actual_title">ACTUAL</string>
+    <string name="item_budget_actual_hint">Enter Actual Cost</string>
+
+    <!-- Timeline -->
+    <string name="timeline_category_three_months">THREE MONTHS AWAY</string>
+    <string-array name="timeline_point_three_months_male">
+        <item>Find a date.</item>
+        <item>Research transportation.</item>
+        <item>Research restaurant options.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_three_months_female">
+        <item>Find a date.</item>
+        <item>Research dresses and fashion trends.</item>
+    </string-array>
+
+    <string name="timeline_category_two_months">TWO MONTHS AWAY</string>
+    <string-array name="timeline_point_two_months_male">
+        <item>Buy/reserve tux.</item>
+        <item>Purchase tickets.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_two_months_female">
+        <item>Buy/reserve dress.</item>
+        <item>Purchase tickets.</item>
+    </string-array>
+
+    <string name="timeline_category_one_month">ONE MONTH AWAY</string>
+    <string-array name="timeline_point_one_month_male">
+        <item>Finalize transportation plans.</item>
+        <item>Schedule haircut.</item>
+        <item>Organize after party plans.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_one_month_female">
+        <item>Schedule makeup.</item>
+        <item>Schedule hair.</item>
+        <item>Schedule mani/pedi.</item>
+        <item>Organize after party plans.</item>
+    </string-array>
+
+    <string name="timeline_category_three_weeks">THREE WEEKS AWAY</string>
+    <string-array name="timeline_point_three_weeks_male">
+        <item>Coordinate your group for pictures.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_three_weeks_female">
+        <item>Coordinate your group for pictures.</item>
+    </string-array>
+
+    <string name="timeline_category_two_weeks">TWO WEEKS AWAY</string>
+    <string-array name="timeline_point_two_weeks_male">
+        <item>Make dinner reservations.</item>
+		<item>Confirm all reservations and appointments.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_two_weeks_female">
+        <item>Make final dress alterations.</item>
+		<item>Confirm all appointments.</item>
+    </string-array>
+
+    <string name="timeline_category_one_week">ONE WEEK AWAY</string>
+    <string-array name="timeline_point_one_week_male">
+        <item>Order your date’s corsage.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_one_week_female">
+        <item>Order your date’s boutonniere.</item>
+    </string-array>
+
+    <string name="timeline_category_day">DAY BEFORE</string>
+    <string-array name="timeline_point_day_male">
+        <item>Pick up your date’s corsage.</item>
+        <item>Charge phone.</item>
+        <item>Charge camera.</item>
+    </string-array>
+    
+    <string-array name="timeline_point_day_female">
+        <item>Pick up your date’s boutonniere.</item>
+        <item>Charge phone.</item>
+        <item>Charge camera.</item>
+    </string-array>
+
+    <string name="timeline_category_day_of">DAY OF THE PROM</string>
+    <string-array name="timeline_point_day_of_male">
+        <item>Relax and have fun!</item>
+    </string-array>
+
+    <string-array name="timeline_point_day_of_female">
+        <item>Relax and have fun!</item>
+    </string-array>
+    
+
+    <!--Categories-->
+    <string-array name="categories_female">
+        <item>Dress/Alterations</item>
+        <item>Shoes</item>
+        <item>Accessories</item>
+        <item>Hair</item>
+        <item>Makeup</item>
+        <item>Mani/Pedi</item>
+        <item>Boutonniere</item>
+        <item>Tickets</item>
+        <item>Dinner</item>
+        <item>Transportation</item>
+        <item>Pictures</item>
+        <item>After Party</item>
+    </string-array>
+
+	<string-array name="category_headers_female">
+	    <item>dress_alterations</item>
+        <item>shoes_female</item>
+        <item>accessories_female</item>
+        <item>hair</item>
+        <item>makeup</item>
+        <item>mani_pedi</item>
+        <item>boutonniere</item>
+        <item>tickets</item>
+        <item>dinner</item>
+        <item>transportation</item>
+        <item>pictures</item>
+        <item>afterparty</item>
+	</string-array>
+	
+	<string-array name="tip_headers_female">
+	    <item>dress_alterations</item>
+        <item>shoes_female</item>
+        <item>accessories_female</item>
+        <item>hair</item>
+        <item>tickets</item>
+        <item>boutonniere</item>
+        <item>dinner</item>
+        <item>transportation</item>
+        <item>pictures</item>
+        <item>afterparty</item>
+	</string-array>
+    
+
+	<string-array name="categories_male">
+        <item>Tux/Alterations</item>
+        <item>Shoes</item>
+        <item>Accessories</item>
+        <item>Haircut</item>
+        <item>Corsage</item>
+        <item>Tickets</item>
+        <item>Dinner</item>
+        <item>Transportation</item>
+        <item>Pictures</item>
+        <item>After Party</item>
+    </string-array>
+
+	
+	<string-array name="category_headers_male">
+        <item>tux_alterations</item>
+        <item>shoes_male</item>
+        <item>accessories_male</item>
+        <item>haircut</item>
+        <item>corsage</item>
+        <item>tickets</item>
+        <item>dinner</item>
+        <item>transportation</item>
+        <item>pictures</item>
+        <item>afterparty</item>
+    </string-array>
+    
+	<string-array name="tip_headers_male">
+        <item>tux_alterations</item>
+        <item>shoes_male</item>
+        <item>accessories_male</item>
+        <item>haircut</item>
+        <item>corsage</item>
+        <item>tickets</item>
+        <item>dinner</item>
+        <item>transportation</item>
+        <item>pictures</item>
+        <item>afterparty</item>
+    </string-array>
+
+    <!-- Facebook -->
+    <string name="alert_dialog_info_title">INFORMATION</string>
+    <string name="alert_dialog_info_message_unable_to_share">Unable to share photo. Please check your external storage access.</string>
+
+</resources>
+
+
+
+

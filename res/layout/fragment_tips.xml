@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tips_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:listSelector="@color/tips_list_selector"
+        android:cacheColorHint="@color/tips_list_cache_color_hint"
+        android:divider="@color/tips_list_divider"
+        android:background="@color/background_medium"
+        />
+
+

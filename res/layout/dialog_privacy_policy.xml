@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/popup_margin_left"
+                android:paddingRight="@dimen/popup_margin_right"
+                android:paddingTop="@dimen/popup_margin_top"
+                android:paddingBottom="@dimen/popup_margin_bottom"
+                android:background="@color/dialog_background">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_light1">
+            <WebView android:id="@+id/bodyWebView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"/>
+        </ScrollView>
+        <ImageView android:id="@+id/close"
+            android:layout_width="@dimen/close_size"
+            android:layout_height="@dimen/close_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/selector_button_close"/>
+</RelativeLayout>

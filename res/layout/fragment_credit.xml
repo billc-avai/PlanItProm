@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:background="@color/background_light1"
+        >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/credit_padding">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/credit_row_margin_top">
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/row_title_weight"
+                    android:text="@string/credit_total_cost_title"
+                    android:textColor="@color/text_medium"/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/credit_total_cost_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/row_value_weight"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/credit_total_cost_hint"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/credit_row_margin_top">
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/row_title_weight"
+                    android:text="@string/credit_item_rate_title"
+                    android:layout_gravity="fill" 
+                    android:textColor="@color/text_medium"/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+                    style="@style/AppBaseTheme.EditText"
+                    android:id="@+id/credit_card_rate_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/row_value_weight"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/credit_card_rate_hint"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/credit_row_margin_top">
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                    style="@style/AppBaseTheme.TextView.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/row_title_weight"
+                    android:text=""/>
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+                    style="@style/AppBaseTheme.Button"
+                    android:id="@+id/credit_calculate_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/row_value_weight"
+                    android:text="@string/credit_calculate_title"/>
+        </LinearLayout>
+
+        <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/credit_credit_hint"
+                android:textSize="@dimen/credit_credit_hint_text"
+                android:textColor="@color/text_medium"/>
+
+
+    </LinearLayout>
+</ScrollView>

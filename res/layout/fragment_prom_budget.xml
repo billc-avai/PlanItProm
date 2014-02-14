@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+				>
+                
+   <LinearLayout 
+        android:id="@+id/footer"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        
+	    <include layout="@layout/footer"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/indo_trip_budget_pager_layout"
+            android:layout_alignParentTop="true"
+            style="@style/BudgetSlider">
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/counterPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"/>
+
+        <com.sevendesign.planitprom.ui.widgets.PageControl
+                android:id="@+id/counter_page_control"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"/>
+    </RelativeLayout>
+    
+    <ScrollView
+            android:id="@+id/indo_trip_budget_scroll_layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_below="@id/indo_trip_budget_pager_layout"
+        	android:layout_above="@id/footer"
+            android:overScrollMode="never"
+            android:fillViewport="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/indo_trip_budget_button_margin_top"
+                android:background="@color/background_light1"
+                >
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+                    style="@style/AppBaseTheme.Button.Light"
+                    android:id="@+id/indo_trip_budget_budget_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indo_trip_budget_button_margin_top"
+                    android:layout_marginBottom="@dimen/indo_trip_budget_button_bottom"
+                    android:layout_marginLeft="@dimen/indo_trip_budget_button_side_margin"
+                    android:layout_marginRight="@dimen/indo_trip_budget_button_side_margin"
+                    android:text="@string/prom_budget_budget_button"
+                    />
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+                    style="@style/AppBaseTheme.Button.Light"
+                    android:id="@+id/indo_trip_budget_calculator_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indo_trip_budget_button_margin_top"
+                    android:layout_marginBottom="@dimen/indo_trip_budget_button_bottom"
+                    android:layout_marginLeft="@dimen/indo_trip_budget_button_side_margin"
+                    android:layout_marginRight="@dimen/indo_trip_budget_button_side_margin"
+                    android:text="@string/prom_budget_calculator_button"
+                    />
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+                    style="@style/AppBaseTheme.Button.Light"
+                    android:id="@+id/indo_trip_budget_tips_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indo_trip_budget_button_margin_top"
+                    android:layout_marginBottom="@dimen/indo_trip_budget_button_bottom"
+                    android:layout_marginLeft="@dimen/indo_trip_budget_button_side_margin"
+                    android:layout_marginRight="@dimen/indo_trip_budget_button_side_margin"
+                    android:text="@string/prom_budget_tips_button"
+                    />
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+                    style="@style/AppBaseTheme.Button.Light"
+                    android:id="@+id/indo_trip_budget_timeline_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/indo_trip_budget_button_margin_top"
+                    android:layout_marginBottom="@dimen/indo_trip_budget_button_bottom"
+                    android:layout_marginLeft="@dimen/indo_trip_budget_button_side_margin"
+                    android:layout_marginRight="@dimen/indo_trip_budget_button_side_margin"
+                    android:text="@string/prom_budget_timeline_button"
+                    />
+
+            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+                    style="@style/AppBaseTheme.Button.Light"
+                    android:id="@+id/indo_trip_budget_gallery_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/prom_budget_gallery_button"
+                    android:layout_marginTop="@dimen/indo_trip_budget_button_margin_top"
+                    android:layout_marginBottom="@dimen/indo_trip_budget_button_bottom"
+                    android:layout_marginLeft="@dimen/indo_trip_budget_button_side_margin"
+                    android:layout_marginRight="@dimen/indo_trip_budget_button_side_margin"
+                    />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

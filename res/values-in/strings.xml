@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlanitProm</string>
+    <string name="app_photos_directory">.planitprom</string>
+    <string name="fragments_theme_setup_title">Pengaturan</string>
+    <string name="fragments_theme_setup_header">Pilih Tema</string>
+    <string name="fragments_settings_title">Pengaturan</string>
+    <string name="fragments_indo_trip_budget_title">Anggaran Wisata</string>
+
+    <!-- Bottom widgets -->
+    <string name="instructions_title"><u>Kebijakan Kerahasiaan</u></string>
+
+    <!-- Counter item -->
+    <string name="counter_item_total_budget_spent_title">Pengeluaran</string>
+    <string name="counter_item_total_budget_budgeted_title">Dianggarkan</string>
+    <string name="counter_item_daily_budget_title">Anggaran Perjalanan per hari</string>
+    <string name="counter_item_daily_budget_per_day">/hari</string>
+    <string name="counter_item_days_remain_title">Jumlah Hari Menjelang Liburan</string>
+
+    <!-- Indo Trip Budget -->
+    <string name="prom_budget_budget_button">Anggaran</string>
+    <string name="prom_budget_calculator_button">Kalkulator</string>
+    <string name="prom_budget_tips_button">Kiat</string>
+    <string name="prom_budget_timeline_button">Waktu</string>
+    <string name="prom_budget_gallery_button">Koleksi Foto</string>
+    <string name="prom_budget_currency">Rp.\u0020</string>
+
+    <!-- Calculator -->
+    <string name="calculator_tag_price_title">Harga</string>
+    <string name="calculator_tag_price_hint">Masukan Harga</string>
+    <string name="calculator_sales_tax_title">Pajak</string>
+    <string name="calculator_sales_tax_hint">Masukan Pajak Pembelian (%)</string>
+    <string name="calculator_discount_title">Diskon/\nKupon</string>
+    <string name="calculator_discount_hint">Masukan Diskon (%)</string>
+    <string name="calculator_tip_title">Uang Tip</string>
+    <string name="calculator_tip_hint">Masukan Uang Tip</string>
+    <string name="calculator_calculate_title">Penghitungan</string>
+    <string name="calculator_total_title">Biaya Total</string>
+    <string name="calculator_credit_hint">Beberapa toko menyediakan pembelian dengan cicilan. Klik di sini untuk melihat harga pembelian cicilan.</string>
+    <string name="calculator_credit_title">Membeli dengan Cicilan?</string>
+
+    <!-- Credit -->
+    <string name="credit_total_cost_title">Harga</string>
+    <string name="credit_total_cost_hint">Masukan harga total</string>
+    <string name="credit_item_rate_title">Bunga</string>
+    <string name="credit_card_rate_hint">Suku bunga kartu kredit (%)</string>
+    <string name="credit_calculate_title">Penghitungan</string>
+    <string name="credit_credit_hint">Jika Anda tidak bayar cicilan per bulan, Anda harus bayar bunga. Di bawah ini adalah total tagihan jika Anda menunda pembayaran hingga 3 bulan, 6 bulan, atau 12 bulan.</string>
+
+    <string name="fragments_budget_title">Anggaran</string>
+    <string name="fragments_calculator_title">Kalkulator</string>
+    <string name="fragments_timeline_title">Waktu</string>
+    <string name="fragments_tips_title">Kiat</string>
+    <string name="fragments_photo_gallery_title">Koleksi Foto</string>
+    <string name="privacy_policy">Kebijakan Kerahasiaan</string>
+
+    <!-- Dialogs -->
+    <string name="alert_dialog_title_instructions">Petunjuk</string>
+    <string name="alert_dialog_message_credit_instructions">Masukan harga barang dan bunga yang ditetapkan untuk pembelian dengan kredit</string>
+    <string name="alert_dialog_credit_three_month_title">Total 3 bulan</string>
+    <string name="alert_dialog_credit_six_month_title">Total 6 bulan</string>
+    <string name="alert_dialog_credit_twelve_month_title">Total 12 bulan</string>
+    <string name="alert_dialog_message_item_budget_instructions">Untuk menghindari pengeluaran yang berlebihan, hitung biaya yang dibutuhkan berdasarkan anggaran yang direkomendasikan dan catat semua pengeluaran agar sesuai anggaran.\n\nUntuk penghitungan pembelian dengan kartu kredit dan kiat menghemat, klik tombol-tombol di bawah layar ini.</string>
+    <string name="alert_dialog_new_budget_name_title">ITEM NAMA</string>
+    <string name="alert_dialog_new_budget_done_title">Selesai</string>
+    <string name="alert_dialog_message_budget_instructions">Bepergian bisa memakan banyak anggaran jika Anda tidak membuat perencanaan jauh-jauh hari. Gunakan kalkulator anggaran ini untuk menghitung perkiraan pengeluaran dan telusuri biaya yang sebenarnya terpakai. Jika pengeluaran sesuai dengan anggaran, Budget Health Meter akan berwarna hijau; jika merah, artinya Anda perlu meninjau ulang pengeluaran Anda.<br></br>Klik masing-masing item untuk melihat rekomendasi anggaran, perhitungan pembayaran dengan kartu kredit, dan kiat-kiat penghematan. Masukkan anggaran dan perkiraan biaya untuk menentukan Budget Health Meter.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_confirm_title">Confirm</string>
+    <string name="settings_cancel_button_title">Batal</string>
+    <string name="settings_reset_button_title">Kembali ke Pengaturan Awal</string>
+    <string name="settings_theme_button_title">Ubah Tema</string>
+    <string name="settings_reset_confirm">Apakah Anda ingin mengatur ulang isi aplikasi?</string>
+
+    <array name="event_name_array">
+        <item>Liburan Sekolah (Juni-Juli)</item>
+        <item>Natal &amp; Tahun Baru (Desember)</item>
+        <item>Libur Lebaran (Agustus)</item>
+    </array>
+    <!-- date in dd/mm. Number of items must be same as in suggested_travel_array -->
+    <array name="suggested_travel_depart_date_array">
+        <item>01/06</item>
+        <item>24/12</item>
+        <item>01/08</item>
+    </array>
+    <!-- date in dd/mm. Number of items must be same as in suggested_travel_array -->
+    <array name="suggested_travel_return_date_array">
+        <item>31/07</item>
+        <item>31/12</item>
+        <item>31/08</item>
+    </array>
+
+    <string name="settings_screen_budget_title">Nama</string>
+    <string name="settings_screen_budget_hint">Beri Nama Perjalanan Anda</string>
+    <string name="settings_screen_budget_limit_title">Anggaran Anda</string>
+    <string name="settings_screen_budget_limit_hint">Masukan Anggaran Maksimum Anda</string>
+    <string name="settings_screen_travel_period_title">Periode Perjalanan</string>
+    <string name="settings_screen_travel_period_hint">Pilih Periode Perjalanan</string>
+    <string name="settings_depart_title">Kedatangan</string>
+    <string name="settings_return_title">Kembali</string>
+    <string name="settings_adults_title">Dewasa</string>
+    <string name="settings_children_title">Anak</string>
+    <string name="settings_add_to_calendar_title">Tambahkan pada kalender</string>
+
+    <!-- Gallery details -->
+    <string name="gallery_details_name_title">ITEM</string>
+    <string name="gallery_details_item_name_hint">Masukkan Nama</string>
+    <string name="gallery_details_cost_title">Harga</string>
+    <string name="gallery_details_cost_hint">Masukkan Harga</string>
+    <string name="gallery_details_merchant_name_title">Pedagang</string>
+    <string name="gallery_details_merchant_name_hint">Masukkan Pedagang</string>
+    <string name="gallery_details_notes_title">NOTES</string>
+    <string name="gallery_details_notes_hint">Enter Additional Info</string>
+    <string name="gallery_details_date_title">Tanggal</string>
+    <string name="gallery_details_delete_title">Hapus Item</string>
+
+    <!-- Number picker -->
+    <string name="km_number_picker_value">0</string>
+
+    <!-- Switch -->
+    <string name="km_switch_on">ON</string>
+    <string name="km_switch_off">OFF</string>
+
+    <!-- Category Add -->
+    <string name="category_add_remain_budget_title">Saldo</string>
+    <string name="category_add_take_picture_title">Memotret</string>
+    <string name="category_add_delete_title">Hapus Item</string>
+    <string name="category_add_item_name_title">Nama</string>
+    <string name="category_add_item_name_hint">Masukan Nama</string>
+    <string name="category_add_budgeted_title">Dianggarkan</string>
+    <string name="category_add_budgeted_hint">Masukkan Jumlah</string>
+    <string name="category_add_actual_title">Actual</string>
+    <string name="category_add_actual_hint">Masukkan Biaya Aktual</string>
+    <string name="category_add_category_hint">Masukan Nama Item</string>
+
+    <!-- Budget -->
+    <string name="budget_item_title">ITEM</string>
+    <string name="budget_budgeted_title">Dianggarkan</string>
+    <string name="budget_actual_title">Aktual</string>
+
+    <!-- Item budget -->
+    <string name="item_budget_budget_remaining_title">Saldo</string>
+    <string name="item_budget_money_spent_title">Uang Yang Dihabiskan</string>
+    <string name="item_budget_take_picture">Memotret</string>
+    <string name="item_budget_budgeted_title">Dianggarkan</string>
+    <string name="item_budget_budgeted_hint">Masukkan Jumlah</string>
+    <string name="item_budget_actual_title">Aktual</string>
+    <string name="item_budget_actual_hint">Masukkan Biaya Aktual</string>
+
+    <!-- Timeline -->
+    <string name="timeline_category_three_months">Tiga Bulan Menuju Liburan</string>
+    <string-array name="timeline_point_three_months">
+        <item>Menentukan Tanggal.</item>
+        <item>Mencari tempat tujuan wisata, tiket penerbangan, kereta atau bus, dan akomodasi.</item>
+        <item>Mencari rental mobil atau motor</item>
+        <item>Mencari tempat membeli souvenir</item>
+        <item>Mencari restoran, kafe, dan warung makan</item>
+        <item>Mencari informasi mengenai budaya setempat</item>
+    </string-array>
+
+    <string name="timeline_category_two_months">Dua Bulan Menuju Liburan</string>
+    <string-array name="timeline_point_two_months">
+        <item>Book accommodations.</item>
+        <item>Purchase flight, train or bus tickets.</item>
+        <item>Reserve a car\/motorcycle.</item>
+    </string-array>
+
+    <string name="timeline_category_one_month">Satu Bulan Menuju Liburan</string>
+    <string-array name="timeline_point_one_month">
+        <item>Membuat rencana aktivitas perjalanan</item>
+        <item>Membuat daftar barang yang perlu dibawa</item>
+        <item>Membeli barang-barang yang diperlukan</item>
+        <item>Memastikan koper atau tas yang akan dipakai sesuai.</item>
+        <item>Mengajukan ijin cuti liburan kepada perusahaan tempat bekerja.</item>
+    </string-array>
+
+    <string name="timeline_category_three_weeks">Tiga Bulan Menuju Liburan</string>
+    <string-array name="timeline_point_three_weeks">
+        <item>Membuat daftar oleh-oleh yang akan dibeli dan anggarannya.</item>
+    </string-array>
+
+    <string name="timeline_category_two_weeks">Dua Minggu Menuju Liburan</string>
+    <string-array name="timeline_point_two_weeks">
+        <item>Perhatikan nilai tukar mata uang negara tujuan (jika Anda ingin bepergian ke luar negeri)</item>
+    </string-array>
+
+    <string name="timeline_category_one_week">Satu Minggu Menuju Liburan</string>
+    <string-array name="timeline_point_one_week">
+        <item>Kemas pakaian dan barang-barang yang akan dibawa. Pastikan bahwa bagasi Anda tidak melebihi batas maksimal untuk menghindari tambahan biaya.</item>
+    </string-array>
+
+    <string name="timeline_category_day">Sehari Sebelum Keberangkatan</string>
+    <string-array name="timeline_point_day">
+        <item>Isi ulang baterai telepon</item>
+        <item>Isi ulang baterai kamera</item>
+    </string-array>
+
+    <string name="timeline_category_day_of">Hari H</string>
+    <string-array name="timeline_point_day_of">
+        <item>Selamat bersenang-senang!</item>
+    </string-array>
+
+    <!-- Tips -->
+    <string name="tip_getting_there_title">Transportasi ke Tujuan Wisata</string>
+    <string-array name="tip_getting_there_details">
+        <item>Dapatkan tiket penerbangan atau kereta dengan harga promosi melalui website. Jika Anda menyetir atau rental mobil, jangan lupa perhitungkan biaya bensin, tol, dan parkir. Jika Anda bepergian bersama anak-anak, sewa atau bawa mobil yang cukup besar.</item>
+    </string-array>
+
+    <string name="tip_getting_around_title">Transportasi Lokal</string>
+    <string-array name="tip_getting_around_details">
+        <item>Alat transportasi yang paling efisien untuk berkeliling kota adalah naik bus. Pilihan lain adalah sewa mobil atau motor – tapi jangan lupa masukkan biaya bensin.</item>
+    </string-array>
+
+    <string name="tip_accommodation_title">Penginapan</string>
+    <string-array name="tip_accommodation_details">
+        <item>Jika Anda punya keluarga atau teman yang tinggal di kota yang akan Anda kunjungi, mungkin saja Anda bisa menginap di rumah mereka. Jika tidak, dapatkan hotel yang menawarkan harga promo melalui website</item>
+    </string-array>
+
+    <string name="tip_food_title">Makanan</string>
+    <string-array name="tip_food_details">
+        <item>Anda lebih suka makan di restoran mewah atau di warung makan? Anda tentukan sendiri! Jika Anda tidak bisa makan makanan setempat, bawa makanan sendiri. Kartu kredit kerap kali menawarkan diskon makan di restoran tertentu, manfaatkan peluang itu.</item>
+    </string-array>
+
+    <string name="tip_sightseeing_and_tours_title">Tur dan Rekreasi</string>
+    <string-array name="tip_sightseeing_and_tours_details">
+        <item>Temukan keindahan tempat yang akan Anda kunjungi. Cari informasi mengenai kebun binatang, museum, atau taman rekreasi termasuk biaya tiket masuk. Harga tiket masuk dapat berubah mengikuti musim liburan.</item>
+    </string-array>
+
+    <string name="tip_adventure_title">Aktivitas Petualangan</string>
+    <string-array name="tip_adventure_details">
+        <item>Jika Anda ingin sensasi adrenalin, cobalah aktivitas yang menantang seperti Bungee Jumping, Rafting, atau yang lainnya. Ingat, biayanya bisa lebih mahal saat musim liburan atau akhir pekan, Jadi, siapkan anggaran dengan benar.</item>
+    </string-array>
+
+    <string name="tip_nightlife_title">Hiburan Malam</string>
+    <string-array name="tip_nightlife_details">
+        <item>Sebelum tiba di kota tujuan, cari tahu informasi hiburan malam mana yang menarik. Cari tahu juga apakah dengan menggunakan kartu kredit/debit, Anda bisa mendapatkan diskon.</item>
+    </string-array>
+
+    <string name="tip_spa_and_beauty_title">Spa dan Perawatan</string>
+    <string-array name="tip_spa_and_beauty_details">
+        <item>Kunjungi spa dan manjakan diri dengan pijatan yang membuat Anda rileks dan jangan lupa masukkan semua biaya tersebut di dalam anggaran.</item>
+    </string-array>
+
+    <string name="tip_shopping_title">Berbelanja</string>
+    <string-array name="tip_shopping_details">
+        <item>Kadang kita perlu berbelanja saat berlibur seperti membeli aksesoris atau pakaian. Perhitungkan semuanya ke dalam anggaran.</item>
+    </string-array>
+
+    <string name="tip_gifts_title">Oleh-oleh</string>
+    <string-array name="tip_gifts_details">
+        <item>Anda pasti ingin membeli oleh-oleh untuk sahabat, keluarga, atau orang-orang terdekat. Carilah informasi mengenai pusat oleh-oleh dengan harga yang lebih terjangkau dibandingkan jika membeli di hotel atau bandara.</item>
+    </string-array>
+
+    <string name="tip_pictures_title">Koleksi Foto</string>
+    <string-array name="tip_pictures_details">
+        <item>Smartphone memiliki fitur kamera yang juga memungkinkan Anda untuk berbagi momen-momen Anda melalui jejaring sosial. Jika Anda memiliki kamera digital, bawa serta dalam liburan Anda.</item>
+    </string-array>
+
+    <!--Categories-->
+    <string-array name="categories_array">
+        <item>Transportasi ke Tujuan Wisata</item>
+        <item>Transportasi Lokal</item>
+        <item>Penginapan</item>
+        <item>Makanan</item>
+        <item>Tur dan Rekreasi</item>
+        <item>Aktivitas Petualangan</item>
+        <item>Hiburan Malam</item>
+        <item>Spa dan Perawatan</item>
+        <item>Berbelanja</item>
+        <item>Oleh-oleh</item>
+        <item>Koleksi Foto</item>
+    </string-array>
+
+</resources>
+
+
+
+
+

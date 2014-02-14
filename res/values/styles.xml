@@ -1,0 +1,193 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.sevendesign.planitprom">
+    
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+    	<item name="custom_font">@string/custom_font_medium</item>
+    </style>
+    
+   <style name="AppBaseTheme.Medium">
+    	<item name="android:background">@color/background_medium</item>
+    </style>
+    
+   <style name="AppBaseTheme.ListHeader">
+       <item name="android:background">@color/background_light2</item>
+       <item name="android:textColor">@color/text_medium</item>
+       <item name="custom_font">@string/custom_font_bold</item>
+   </style>
+   
+   <style name="AppBaseTheme.ListItem">	
+       <item name="android:background">@color/background_light1</item>
+       <item name="android:textColor">@color/text_medium</item>
+       <item name="custom_font">@string/custom_font_light</item>
+   </style>
+    
+    <style name="AppBaseTheme.ActionBarTitle">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textSize">@dimen/action_bar_text_size</item>
+    </style>
+        
+    <style name="AppBaseTheme.ActionBarTitle.Small">
+        <item name="android:textSize">@dimen/action_bar_text_size_small</item>
+    </style>
+    
+    <style name="AppBaseTheme.ActionBarTitle.NavSpinner">
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/action_bar_nav_spinner_padding</item>
+        <item name="android:background">@drawable/actionbar_background</item>
+    </style>
+
+    <style name="BudgetSlider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/indo_trip_budget_pager_height</item>
+        <item name="android:background">@color/slider_background</item>
+    </style>
+
+    <style name="Policy">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/instructions_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentBottom">true</item>
+
+        <item name="android:text">@string/instructions_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:background">@color/background_light1</item>
+        <item name="custom_font">@string/custom_font_medium</item>
+    </style>
+
+    <!-- TextViews -->
+    <style name="AppBaseTheme.TextView">
+        <item name="android:textSize">@dimen/text_view_title</item>
+    </style>
+
+    <style name="AppBaseTheme.TextView.InvertColor">
+        <item name="android:textColor">@color/text_medium</item>
+    </style>
+    
+    <style name="AppBaseTheme.TextView.Title">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="custom_font">@string/custom_font_bold</item>
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+
+    <style name="AppBaseTheme.TextView.Title.InvertColor">
+        <item name="android:textColor">@color/text_medium</item>
+    </style>
+
+    <style name="AppBaseTheme.TextView.Header">
+        <item name="android:background">@drawable/slide_bar</item>
+        <item name="android:textColor">@color/text_medium</item>
+        <item name="android:textSize">@dimen/text_view_header</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="custom_font">@string/custom_font_bold</item>
+    </style>
+
+    <style name="AppBaseTheme.TextView.Message">
+        <item name="android:textColor">@color/message_text</item>
+        <item name="android:textSize">@dimen/message_text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppBaseTheme.TextView.Message.InvertColor">
+        <item name="android:textColor">@color/message_text_invert_color</item>
+        <item name="android:textSize">@dimen/message_text</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- EditTexts -->
+    <style name="AppBaseTheme.EditText">
+        <item name="android:background">@drawable/edit_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceMediumInverse</item>
+        <item name="android:textColor">@color/edit_text_value</item>
+        <item name="android:textColorHint">@color/edit_text_hint</item>
+        <item name="android:textSize">@dimen/edit_text_value</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:padding">@dimen/theme_setup_edit_text_padding</item>
+		<item name="android:scrollHorizontally">true</item>
+		<item name="android:ellipsize">end</item>
+		<item name="custom_font">@string/custom_font_light_italic</item>
+    </style>
+
+    <style name="AppBaseTheme.EditText.InvertColor">
+        <item name="android:textColor">@color/edit_text_value_invert_color</item>
+        <item name="android:textColorHint">@color/edit_text_hint_invert_color</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="AppBaseTheme.Button">
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:paddingBottom">@dimen/button_light_padding</item>
+        <item name="android:paddingTop">@dimen/button_light_padding</item>
+        <item name="android:textColor">@drawable/selector_button_text_color</item>
+        <item name="android:background">@drawable/button_background_default</item>
+    </style>
+
+    <style name="AppBaseTheme.Button.Dark">
+        <item name="android:textColor">@drawable/selector_button_dark_text</item>
+        <item name="android:background">@drawable/selector_button_dark</item>
+    </style>
+
+    <style name="AppBaseTheme.Button.Light">
+        <item name="android:textColor">@drawable/selector_button_light_text</item>
+        <item name="android:background">@drawable/selector_button_light</item>
+    </style>
+
+    <style name="AppBaseTheme.Button.Grey">
+        <item name="android:textColor">@drawable/selector_button_light_text</item>
+        <item name="android:background">@drawable/selector_button_grey</item>
+    </style>
+
+    <style name="AppBaseTheme.Button.Grey.Light">
+        <item name="android:background">@drawable/selector_button_grey_light</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="AppBaseTheme.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:textColor">@color/edit_text_value</item>
+        <item name="android:textSize">@dimen/edit_text_value</item>
+    </style>
+    
+    <style name="AppBaseTheme.SpinnerEdit">
+        <item name="android:background">@drawable/edit_background</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?android:textAppearanceMediumInverse</item>
+        <item name="android:textColor">@color/edit_text_value</item>
+        <item name="android:textColorHint">@color/edit_text_hint</item>
+        <item name="android:textSize">@dimen/edit_text_value</item>
+        <item name="android:padding">@dimen/theme_setup_edit_text_padding</item>
+		<item name="android:ellipsize">end</item>
+		<item name="custom_font">@string/custom_font_light_italic</item>
+    </style>
+
+    <!-- Progress Bars -->
+    <style name="AppBaseTheme.ProgressBarHorizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_horizontal</item>
+        <item name="android:minHeight">7dp</item>
+        <item name="android:maxHeight">7dp</item>
+    </style>
+
+    <!-- CheckBox -->
+    <style name="AppBaseTheme.CompoundButton">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryDisableOnly</item>
+    </style>
+    <style name="AppBaseTheme.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox</item>
+    </style>
+
+</resources>
