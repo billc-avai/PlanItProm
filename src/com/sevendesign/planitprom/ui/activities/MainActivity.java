@@ -59,14 +59,14 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        useTheme();
-        initActionBar();
+		super.onCreate(savedInstanceState);
         ShowFragmentAction action = ShowFragmentAction.SPLASH_SCREEN;
         action.setAddBackStack(false);
         showFragment(new SplashScreenFragment(), action);
-
+		
+		setContentView(R.layout.activity_main);
+//        useTheme();
+		initActionBar();
     }
 
     @Override

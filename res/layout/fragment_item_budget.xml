@@ -1,124 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-    <ImageView android:id="@+id/header_image"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/indo_trip_budget_pager_height"
-        android:layout_alignParentTop="true"
-        android:scaleType="centerCrop"/>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:overScrollMode="never"
+	android:fillViewport="true">
 
-    <RelativeLayout
-        android:id="@+id/item_budget_pager_layout"
-        style="@style/BudgetSlider"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/indo_trip_budget_pager_height"
-        android:layout_alignParentTop="true" >
+	<RelativeLayout 
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:minHeight="400dp"
+	     android:background="@color/background_medium">
+		    
+		    <FrameLayout
+		        android:id="@+id/item_budget_pager_layout"
+		        style="@style/BudgetSlider"
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/indo_trip_budget_pager_height"
+		        android:layout_alignParentTop="true" >
+		
+		        <ImageView android:id="@+id/header_image"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:scaleType="centerCrop"/>
+		        
+				<com.sevendesign.planitprom.ui.widgets.PageControl
+		                android:id="@+id/item_budget_counter_page_control"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:gravity="center|bottom"/>
+		        
+		        <android.support.v4.view.ViewPager
+		                android:id="@+id/item_budget_counter_pager"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:overScrollMode="never"/>
+		
+		    	</FrameLayout>
+		
+		       <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+		               style="@style/AppBaseTheme.TextView.Title"
+		               android:id="@+id/item_budget_title_text"
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:layout_below="@id/item_budget_pager_layout"
+		               android:padding="@dimen/item_budget_row_padding"
+		               />
+		           
+		       	<LinearLayout
+		       	    	android:id="@+id/item_budget_edit_section"
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:orientation="vertical"
+		               android:layout_below="@id/item_budget_title_text"
+		               android:padding="@dimen/item_budget_row_padding"
+		               android:background="@color/background_light1">
+		
+		              <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+		                   style="@style/AppBaseTheme.TextView.Title.InvertColor"
+		                   android:layout_width="match_parent"
+		                   android:layout_height="wrap_content"
+		           		android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
+		                   android:text="@string/item_budget_budgeted_title"
+		                   />
+		
+		              <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+		                      style="@style/AppBaseTheme.EditText"
+		                      android:id="@+id/item_budget_budgeted_edit"
+		                      android:layout_width="match_parent"
+		                      android:layout_height="wrap_content"
+		                      android:hint="@string/item_budget_budgeted_hint"
+		                      android:inputType="numberDecimal"
+		                      />
+		
+		              <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+		                      style="@style/AppBaseTheme.TextView.Title.InvertColor"
+		                      android:layout_width="match_parent"
+		                      android:layout_height="wrap_content"
+		                      android:layout_marginTop="@dimen/item_budget_row_padding"
+		           			android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
+		                      android:text="@string/item_budget_actual_title"
+		                      />
+		
+		              <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
+		                      style="@style/AppBaseTheme.EditText"
+		                      android:id="@+id/item_budget_actual_edit"
+		                      android:layout_width="match_parent"
+		                      android:layout_height="wrap_content"
+		                      
+		                      android:hint="@string/item_budget_actual_hint"
+		                      android:inputType="numberDecimal"
+		                      />
+		
+		           </LinearLayout>
+            
+		     <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+		             style="@style/AppBaseTheme.Button"
+		             android:id="@+id/item_budget_take_picture_button"
+		             android:layout_width="fill_parent"
+		             android:layout_height="wrap_content"
 
-        <android.support.v4.view.ViewPager
-                android:id="@+id/item_budget_counter_pager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:overScrollMode="never"/>
+		             android:layout_alignParentBottom="true"
+		             android:layout_margin="10dp"
+		             android:text="@string/item_budget_take_picture"/>
 
-        <com.sevendesign.planitprom.ui.widgets.PageControl
-                android:id="@+id/item_budget_counter_page_control"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@id/item_budget_counter_pager"
-                android:gravity="center"/>
-
-    </RelativeLayout>
-
-        <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:fillViewport="true"
-                android:layout_below="@id/item_budget_pager_layout"
-                android:layout_alignParentBottom="true"
-                android:background="@color/background_medium">
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentTop="true"
-                    android:layout_above="@+id/item_budget_take_picture_button"
-                    android:orientation="vertical">
-
-                <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
-                        style="@style/AppBaseTheme.TextView.Title"
-                        android:id="@+id/item_budget_title_text"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/item_budget_row_padding"
-                        />
-                
-                <ScrollView
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:overScrollMode="never">
-                    
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="@dimen/item_budget_row_padding"
-                        android:background="@color/background_light1">
-
-                       <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
-                            style="@style/AppBaseTheme.TextView.Title.InvertColor"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                    		android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
-                            android:text="@string/item_budget_budgeted_title"
-                            />
-
-                       <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
-                               style="@style/AppBaseTheme.EditText"
-                               android:id="@+id/item_budget_budgeted_edit"
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:hint="@string/item_budget_budgeted_hint"
-                               android:inputType="numberDecimal"
-                               />
-
-
-                       <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
-                               style="@style/AppBaseTheme.TextView.Title.InvertColor"
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:layout_marginTop="@dimen/item_budget_row_padding"
-                    			android:layout_marginBottom="@dimen/settings_edit_title_margin_bottom"
-                               android:text="@string/item_budget_actual_title"
-                               />
-
-                       <com.sevendesign.planitprom.ui.customviews.CustomFontEditText
-                               style="@style/AppBaseTheme.EditText"
-                               android:id="@+id/item_budget_actual_edit"
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               
-                               android:hint="@string/item_budget_actual_hint"
-                               android:inputType="numberDecimal"
-                               />
-
-                    </LinearLayout>
-
-                </ScrollView>
-            </LinearLayout>
-            <com.sevendesign.planitprom.ui.customviews.CustomFontButton
-                    style="@style/AppBaseTheme.Button"
-                    android:id="@+id/item_budget_take_picture_button"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_margin="10dp"
-                    android:text="@string/item_budget_take_picture"/>
-
-        </RelativeLayout>
-
-
-
-</RelativeLayout>
+	</RelativeLayout>
+</ScrollView>

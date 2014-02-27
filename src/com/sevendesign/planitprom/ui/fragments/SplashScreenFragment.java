@@ -1,5 +1,7 @@
 package com.sevendesign.planitprom.ui.fragments;
 
+import java.util.List;
+
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -9,6 +11,8 @@ import android.view.ViewGroup;
 
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.sevendesign.planitprom.R;
+import com.sevendesign.planitprom.database.manager.DbManager;
+import com.sevendesign.planitprom.database.models.Budget;
 import com.sevendesign.planitprom.startup.StartTask;
 import com.sevendesign.planitprom.startup.StartupManager;
 import com.sevendesign.planitprom.startup.TaskLoadFonts;
@@ -63,14 +67,14 @@ public class SplashScreenFragment extends Fragment implements StartupManager.OnS
     }
 
     private void checkBudget() {
-//        List<Budget> budgets = new DbManager().getBudgets();
-//        if(budgets.size() > 0) {
+		List<Budget> budgets = new DbManager().getBudgets();
+		if (budgets.size() > 0) {
             EventBus.getDefault().post(ShowFragmentAction.PROM_BUDGET);
-//        } else {
-//            ShowFragmentAction action = ShowFragmentAction.THEME_SETUP;
-//            action.setData(new Boolean(false));
-//            EventBus.getDefault().post(action);
-//        }
+		} else {
+			ShowFragmentAction action = ShowFragmentAction.SETTINGS;
+			action.setData(new Boolean(false));
+			EventBus.getDefault().post(action);
+		}
     }
 }
 

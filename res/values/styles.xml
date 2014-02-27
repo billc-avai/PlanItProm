@@ -40,7 +40,7 @@
     <style name="BudgetSlider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/indo_trip_budget_pager_height</item>
-        <item name="android:background">@color/slider_background</item>
+        <item name="android:background">@drawable/header_background_default</item>
     </style>
 
     <style name="Policy">
