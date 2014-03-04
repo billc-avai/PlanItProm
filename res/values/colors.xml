@@ -3,6 +3,9 @@
     <color name="fiesta_red">#D84942</color>
     <color name="fiesta_red_pressed">#96322E</color>
     
+    <color name="aqua_blue">#28C1AC</color>
+    <color name="aqua_blue_pressed">#1C8979</color>
+    
     <color name="background_light1">#E3DFD1</color>
     <color name="background_light2">#F8F7ED</color>
     <color name="background_medium">#54605C</color>
@@ -84,6 +87,10 @@
     <color name="button_background">@color/fiesta_red</color>
     <color name="button_background_pressed">@color/fiesta_red_pressed</color>
     
+    
+        <!-- button alt -->
+    <color name="button_background_alt">@color/aqua_blue</color>
+    <color name="button_background_pressed_alt">@color/aqua_blue_pressed</color>
     
     <!-- button light -->
     <color name="button_light">@color/background_light2</color>

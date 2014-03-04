@@ -28,9 +28,9 @@ import com.sevendesign.planitprom.ui.fragments.CalculatorFragment;
 import com.sevendesign.planitprom.ui.fragments.CategoryAddFragment;
 import com.sevendesign.planitprom.ui.fragments.CreditFragment;
 import com.sevendesign.planitprom.ui.fragments.DatePickerFragment;
-import com.sevendesign.planitprom.ui.fragments.GalleryDetailsFragment;
-import com.sevendesign.planitprom.ui.fragments.GalleryFragment;
+import com.sevendesign.planitprom.ui.fragments.GalleryByCategoryFragment;
 import com.sevendesign.planitprom.ui.fragments.ItemBudgetFragment;
+import com.sevendesign.planitprom.ui.fragments.PhotoFragment;
 import com.sevendesign.planitprom.ui.fragments.PromBudgetFragment;
 import com.sevendesign.planitprom.ui.fragments.SettingsFragment;
 import com.sevendesign.planitprom.ui.fragments.SplashScreenFragment;
@@ -149,14 +149,22 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
             case GALLERY:
                 SpinnerNavigator.initActionBar(SpinnerNavigator.FragmentDescription.PHOTO_GALLERY, this);
                 break;
-            case GALLERY_DETAILS:
-                Object galleryDetailsData = action.getData();
-                PhotoItem photoItem = null;
-                if (galleryDetailsData instanceof PhotoItem) {
-                    photoItem = (PhotoItem) galleryDetailsData;
-                }
-                showFragment(GalleryDetailsFragment.newInstance(photoItem), action);
-                break;
+//            case GALLERY_DETAILS:
+//                Object galleryDetailsData = action.getData();
+//                PhotoItem photoItem = null;
+//                if (galleryDetailsData instanceof PhotoItem) {
+//                    photoItem = (PhotoItem) galleryDetailsData;
+//                }
+//                showFragment(GalleryDetailsFragment.newInstance(photoItem), action);
+//                break;
+		case PHOTO:
+			Object photoData = action.getData();
+			PhotoItem photoItem = null;
+			if (photoData instanceof PhotoItem) {
+				photoItem = (PhotoItem) photoData;
+			}
+			showFragment(PhotoFragment.newInstance(photoItem), action);
+			break;
             case CATEGORY_ADD:
                 Object categoryAddData = action.getData();
                 long itemId = 0;
@@ -238,7 +246,7 @@ public class MainActivity extends SherlockFragmentActivity implements ActionBar.
             case 4:{
                 ShowFragmentAction action = ShowFragmentAction.GALLERY;
                 action.setAddBackStack(true);
-                showFragment(new GalleryFragment(), action);
+			showFragment(new GalleryByCategoryFragment(), action);
             }
             break;
         }

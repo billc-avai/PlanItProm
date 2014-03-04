@@ -1,7 +1,6 @@
 package com.sevendesign.planitprom.ui.fragments;
 
 import java.math.BigDecimal;
-import java.util.Calendar;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -25,7 +24,6 @@ import com.sevendesign.planitprom.adapters.ItemBudgetAdapter;
 import com.sevendesign.planitprom.database.manager.DbManager;
 import com.sevendesign.planitprom.database.models.Budget;
 import com.sevendesign.planitprom.database.models.Category;
-import com.sevendesign.planitprom.database.models.PhotoItem;
 import com.sevendesign.planitprom.ui.widgets.PageControl;
 import com.sevendesign.planitprom.utils.BudgetUtils;
 import com.sevendesign.planitprom.utils.Dialogs;
@@ -191,6 +189,7 @@ public class ItemBudgetFragment extends Fragment implements BackButtonListener {
 		counterPageControl.setActiveDrawable(getResources().getDrawable(R.drawable.bullet_selected));
 		counterPageControl.setInactiveDrawable(getResources().getDrawable(R.drawable.bullet_not_selected));
         counterPager.setCurrentItem(counterCurrentPage);
+		counterPager.setBackgroundColor(getActivity().getResources().getColor(R.color.slider_background));
         changeCounterPage(counterCurrentPage);
         counterAdapter.notifyDataSetChanged();
     }
@@ -254,23 +253,21 @@ public class ItemBudgetFragment extends Fragment implements BackButtonListener {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == PhotoUtils.ACTION_TAKE_PHOTO && resultCode == Activity.RESULT_OK) {
-            if(category != null) {
-                String title = "";
-                String merchant = "";
-                BigDecimal cost = BigDecimal.ZERO;
-                String notes = "";
-                Calendar cal = Calendar.getInstance();
-                StringBuilder dataBuilder = new StringBuilder();
-                dataBuilder.append(String.format("%tB", cal));
-                dataBuilder.append(" ");
-                dataBuilder.append(cal.get(Calendar.DAY_OF_MONTH));
-                dataBuilder.append(", ");
-                dataBuilder.append(cal.get(Calendar.YEAR));
-                String date = dataBuilder.toString();
-                manager.addPhotoItem(new PhotoItem(title, photoPath, cost, merchant, notes, date, category.getId()));
-            }
-        }
+		
+		if (resultCode == Activity.RESULT_OK &&
+				(requestCode == PhotoUtils.ACTION_TAKE_PHOTO ||
+				requestCode == PhotoUtils.ACTION_PICK_PHOTO)) {
+			
+			int categoryId = 0;
+			
+			if (category != null) {
+				categoryId = category.getId();
+			}
+			
+			if (categoryId > 0) {
+				PhotoUtils.handlePhotoResult(getActivity(), requestCode, data, categoryId, photoPath);
+			}
+		}
     }
 
     @Override

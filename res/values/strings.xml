@@ -9,12 +9,12 @@
     <string name="category_zero_value">—</string>
     
     <!-- Fonts -->
-    <string name="custom_font_light">Vitesse-Light.otf</string>
-    <string name="custom_font_light_italic">Vitesse-LightItalic.otf</string>
-    <string name="custom_font_medium">Vitesse-Medium.otf</string>
-    <string name="custom_font_medium_italic">Vitesse-MediumItalic.otf</string>
-    <string name="custom_font_bold">Vitesse-Bold.otf</string>
-    <string name="custom_font_bold_italic">Vitesse-BoldItalic.otf</string>
+    <string name="custom_font_medium">Arvo-Regular.ttf</string>
+    <string name="custom_font_medium_italic">Arvo-Italic.ttf</string>
+    <string name="custom_font_bold">Arvo-Bold.ttf</string>
+    <string name="custom_font_bold_italic">Arvo-BoldItalic.ttf</string>
+    <string name="custom_font_light">@string/custom_font_medium</string>
+    <string name="custom_font_light_italic">@string/custom_font_medium_italic</string>
 
     <!-- Bottom widgets -->
     <string name="instructions_title"><u>Privacy Policy</u></string>
@@ -25,6 +25,8 @@
     <string name="counter_item_daily_budget_title">DAILY TRAVEL BUDGET</string>
     <string name="counter_item_daily_budget_per_day">/day</string>
     <string name="counter_item_days_remain_title">DAYS TILL PROM</string>
+    <string name="counter_item_budgeted_title">BUDGETED TO DATE</string>
+    
 
     <!-- Prom Budget -->
     <string name="prom_budget_budget_button">Budget</string>
@@ -73,6 +75,9 @@
     <string name="alert_dialog_new_budget_name_title">ITEM NAME</string>
     <string name="alert_dialog_new_budget_done_title">Done</string>
     <string name="alert_dialog_message_budget_instructions">Prom can be very expensive if you don’t have a budget. Use this budget calculator to plan your expenses and track actual costs while shopping. Click on each item for recommended budgets, credit calculations, and cost-saving tips.\n\nOnce you enter your total budget and expenses, see where you fall on the Budget Health Meter. Keep your Budget Health Meter green; if you find yourself too far in red, you’ll need to cut back on costs in other areas.</string>
+    <string name="alert_dialog_photo_saved_message">Photo saved to Photo Gallery</string>
+    <string name="alert_select_category_title">Select Category</string>
+    <string name="alert_delete_photo_title">Delete Photo?</string>
 
     <!-- Settings Screen -->
     <string name="settings_confirm_title">Confirm</string>
@@ -131,6 +136,8 @@
     <string name="gallery_details_notes_hint">Enter Additional Info</string>
     <string name="gallery_details_date_title">DATE</string>
     <string name="gallery_details_delete_title">Delete Item</string>
+    <string name="gallery_details_share">Share</string>
+    <string name="category">CATEGORY</string>
 
     <!-- Number picker -->
     <string name="km_number_picker_value">0</string>
@@ -141,7 +148,7 @@
 
     <!-- Category Add -->
     <string name="category_add_remain_budget_title">REMAINING IN TOTAL BUDGET</string>
-    <string name="category_add_take_picture_title">Take Picture</string>
+    <string name="category_add_take_picture_title">Add/Take Picture</string>
     <string name="category_add_delete_title">Delete Item</string>
     <string name="category_add_item_name_title">NAME</string>
     <string name="category_add_item_name_hint">Enter Name</string>
@@ -159,11 +166,13 @@
     <!-- Item budget -->
     <string name="item_budget_budget_remaining_title">TOTAL BUDGET REMAINING</string>
     <string name="item_budget_money_spent_title">ACTUAL MONEY SPENT</string>
-    <string name="item_budget_take_picture">Take Picture</string>
+    <string name="item_budget_take_picture">Add/Take Picture</string>
     <string name="item_budget_budgeted_title">BUDGETED</string>
     <string name="item_budget_budgeted_hint">Enter Amount</string>
     <string name="item_budget_actual_title">ACTUAL</string>
     <string name="item_budget_actual_hint">Enter Actual Cost</string>
+   	<string name="picture_dialog_item_take_new">Take New Picture</string>
+   	<string name="picture_dialog_item_add_existing">Add Existing Picture</string>
 
     <!-- Timeline -->
     <string name="timeline_category_three_months">THREE MONTHS AWAY</string>

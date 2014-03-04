@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light1"
+        android:orientation="vertical"
+        android:padding="10dp">
+        
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView 
+        android:id="@+id/photo_title"
+        style="@style/AppBaseTheme.TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Title"
+        />
+
+ 	<ImageView
+         android:id="@+id/gallery_details_image"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:layout_marginTop="10dp"
+         android:adjustViewBounds="true"
+         android:scaleType="centerInside" />
+    
+    <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+        style="@style/AppBaseTheme.Button.Alt"
+      android:id="@+id/share_button"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/gallery_details_share"/>
+    
+    <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+         style="@style/AppBaseTheme.Button"
+         android:id="@+id/gallery_details_delete_button"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:text="@string/gallery_details_delete_title"
+         />        
+
+</LinearLayout>

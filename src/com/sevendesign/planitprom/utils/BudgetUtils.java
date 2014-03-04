@@ -5,6 +5,7 @@ import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.Calendar;
 
+import com.sevendesign.planitprom.database.manager.DbManager;
 import com.sevendesign.planitprom.database.models.Budget;
 
 /**
@@ -29,32 +30,6 @@ public class BudgetUtils {
 		
 		return daysRemain;
 	}
-
-//    public static BigDecimal getBudgetPerDay(Budget budget) {
-//        String departureString = budget.getDepartureDate();
-//        Calendar departureCalendar = Calendar.getInstance();
-//        departureCalendar.setTimeInMillis(Long.valueOf(departureString));
-//
-//        String returnString = budget.getReturnDate();
-//        Calendar returnCalendar = Calendar.getInstance();
-//        returnCalendar.setTimeInMillis(Long.valueOf(returnString));
-//
-//        long departureMillis = departureCalendar.getTimeInMillis();
-//        long returnMillis = returnCalendar.getTimeInMillis();
-//
-//        int daysInTrip = 0;
-//        if (returnCalendar.after(departureCalendar)) {
-//            long inTrip = returnMillis - departureMillis;
-//            daysInTrip = (int) (inTrip / 86400000L);
-//        }
-//
-//        BigDecimal budgetPerDay = BigDecimal.ZERO;
-//        if (daysInTrip > 0) {
-//            budgetPerDay = budget.getPlannedBudget().divide(new BigDecimal(daysInTrip), 2, RoundingMode.HALF_UP);
-//        }
-//
-//        return budgetPerDay;
-//    }
 
     public static String getMoneyValueString(float value) {
         DecimalFormat df = new DecimalFormat();
@@ -92,4 +67,9 @@ public class BudgetUtils {
 
         return formattedValue.replaceAll(",", ""); // exclude commas to get simple float appearance with two fraction characters
     }
+	
+	public static float getBudgetedToDate(Budget budget) {
+		DbManager manager = new DbManager();
+		return manager.getBudgetedToDate(budget.getId());
+	}
 }

@@ -21,13 +21,13 @@ import com.sevendesign.planitprom.utils.BudgetUtils;
  * Created by mib on 09.08.13.
  */
 public class BudgetAdapter extends PagerAdapter {
-	public static final int PAGE_COUNT = 2;
+	public static final int PAGE_COUNT = 3;
     private LayoutInflater inflater;
     private Budget budget;
     private String currency;
     private BigDecimal actual;
     private BigDecimal budgeted;
-//    private BigDecimal budgetPerDay;
+	private BigDecimal budgetedToDate;
     private int daysBefore;
 
     private Drawable progressBarRed;
@@ -38,7 +38,6 @@ public class BudgetAdapter extends PagerAdapter {
         if(budget != null) {
             this.budget = budget;
         } else {
-//            this.budget = new Budget("", BigDecimal.ZERO,BigDecimal.ZERO,"0","0","0",0,0);
 			this.budget = new Budget("", BigDecimal.ZERO, BigDecimal.ZERO, "0", "");
         }
         progressBarRed = activity.getResources().getDrawable(R.drawable.progress_bar_horizontal_red);
@@ -92,23 +91,22 @@ public class BudgetAdapter extends PagerAdapter {
                     spentProgress.setProgress((int)progress);
                 }
             });
-//        } else if (position == 1) {
-//            int layoutId = R.layout.counter_item_daily_budget;
-//            itemView = inflater.inflate(layoutId, container, false);
-//            TextView dailyText = (TextView) itemView.findViewById(R.id.counter_item_daily_spent_value_text);
-//
-//            StringBuilder perDaySB = new StringBuilder(currency);
-//            perDaySB.append(BudgetUtils.getMoneyValueString(budgetPerDay));
-//            dailyText.setText(perDaySB);
 		} else if (position == 1) {
             int layoutId = R.layout.counter_item_days_remain;
             itemView = inflater.inflate(layoutId, container, false);
             TextView daysRemainText = (TextView) itemView.findViewById(R.id.counter_item_days_remain_value_text);
             daysRemainText.setText(String.valueOf(daysBefore));
+		} else if (position == 2) {
+			int layoutId = R.layout.counter_item_budgeted_to_date;
+			itemView = inflater.inflate(layoutId, container, false);
+			TextView budgetedText = (TextView) itemView.findViewById(R.id.counter_item_budgeted_value_text);
+			
+			StringBuilder budgetedToDateSb = new StringBuilder(currency);
+			budgetedToDateSb.append(BudgetUtils.getMoneyValueString(budgetedToDate));
+			budgetedText.setText(budgetedToDateSb);
         }
 
         container.addView(itemView);
-
         return itemView;
     }
 
@@ -120,7 +118,7 @@ public class BudgetAdapter extends PagerAdapter {
     private void calcData() {
         actual = budget.getActualBudget();
         budgeted = budget.getPlannedBudget();
-//        budgetPerDay = BudgetUtils.getBudgetPerDay(budget);
+		budgetedToDate = BigDecimal.valueOf(BudgetUtils.getBudgetedToDate(budget));
         daysBefore = BudgetUtils.getDaysRemain(budget);
     }
 }

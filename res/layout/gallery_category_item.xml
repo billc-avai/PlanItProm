@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/budget_list_padding_left"
+        android:paddingRight="@dimen/budget_list_padding_right"
+        android:paddingTop="@dimen/budget_list_item_padding_top"
+        android:paddingBottom="@dimen/budget_list_item_padding_bottom"
+        android:gravity="center_vertical"
+        android:background="@color/background_light1"
+        >
+
+	     <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+             android:id="@+id/category_item_title_text"
+             android:layout_width="wrap_content"
+             android:layout_height="@dimen/budget_list_title_height"
+             android:gravity="center_vertical|left"
+             android:singleLine="true"
+             android:ellipsize="end"
+             android:textSize="@dimen/budget_list_item_text"
+             android:textColor="@color/text_medium"
+             />
+
+</LinearLayout>

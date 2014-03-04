@@ -20,11 +20,6 @@ public class DbOpenHelper extends SQLiteOpenHelper {
 			+ BudgetsTableEntries.TITLE + " TEXT NOT NULL, "
 			+ BudgetsTableEntries.PLANNED_BUDGET + " TEXT NOT NULL, "
 			+ BudgetsTableEntries.ACTUAL_BUDGET + " TEXT NOT NULL, "
-			//			+ BudgetsTableEntries.TRAVEL_PERIOD + " TEXT NOT NULL, "
-//			+ BudgetsTableEntries.DEPARTURE_DATE + " TEXT NOT NULL, "
-			//            + BudgetsTableEntries.RETURN_DATE + " TEXT NOT NULL, "
-//            + BudgetsTableEntries.ADULTS_COUNT + " INTEGER NOT NULL, "
-//			+ BudgetsTableEntries.CHILDREN_COUNT + " INTEGER NOT NULL" 
 			+ BudgetsTableEntries.DEPARTURE_DATE + " TEXT NOT NULL, "
 			+ BudgetsTableEntries.GENDER + " TEXT NOT NULL " + ")";
 

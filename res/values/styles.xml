@@ -1,7 +1,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res/com.sevendesign.planitprom">
     
-    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock.Light">
     	<item name="custom_font">@string/custom_font_medium</item>
     </style>
     
@@ -130,6 +130,10 @@
         <item name="android:paddingTop">@dimen/button_light_padding</item>
         <item name="android:textColor">@drawable/selector_button_text_color</item>
         <item name="android:background">@drawable/button_background_default</item>
+    </style>
+    
+    <style name="AppBaseTheme.Button.Alt">
+        <item name="android:background">@drawable/button_background_alt</item>
     </style>
 
     <style name="AppBaseTheme.Button.Dark">

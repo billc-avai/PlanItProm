@@ -1,5 +1,8 @@
 package com.sevendesign.planitprom.ui.fragments;
 
+import java.io.File;
+import java.math.BigDecimal;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -19,9 +22,6 @@ import com.sevendesign.planitprom.ui.activities.FacebookPublisher;
 import com.sevendesign.planitprom.utils.BudgetUtils;
 import com.sevendesign.planitprom.utils.PhotoUtils;
 import com.sevendesign.planitprom.utils.Utils;
-
-import java.io.File;
-import java.math.BigDecimal;
 
 public class GalleryDetailsFragment extends Fragment {
     public static final String TAG = "GalleryDetailsFragment";
@@ -137,7 +137,7 @@ public class GalleryDetailsFragment extends Fragment {
             sellerNameEdit.setText(photoItem.getMerchant());
             notesEdit.setText(photoItem.getNotes());
             dateEdit.setText(photoItem.getDate());
-            detailsImage.setImageBitmap(PhotoUtils.getPhotoBitmap(imageWidth, imageWidth, photoItem.getPath()));
+			detailsImage.setImageBitmap(PhotoUtils.getPhotoBitmap(getActivity(), imageWidth, imageWidth, photoItem.getPath()));
         }
     }
     private PhotoItem getData() {

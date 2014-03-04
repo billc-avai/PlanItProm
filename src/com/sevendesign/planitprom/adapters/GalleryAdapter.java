@@ -1,17 +1,21 @@
 package com.sevendesign.planitprom.adapters;
 
+import java.util.List;
+
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 import com.sevendesign.planitprom.R;
 import com.sevendesign.planitprom.database.models.PhotoItem;
+import com.sevendesign.planitprom.ui.actions.ShowFragmentAction;
 import com.sevendesign.planitprom.utils.PhotoUtils;
 
-import java.util.List;
+import de.greenrobot.event.EventBus;
 
 /**
  * Created by mib on 08.08.13.
@@ -59,9 +63,19 @@ public class GalleryAdapter extends BaseAdapter {
         lp.width = cellWidth;
         lp.height = cellHeight;
 
-        PhotoItem photoItem = getItem(position);
-        iv.setImageBitmap(PhotoUtils.getPhotoBitmap(cellWidth, cellHeight, photoItem.getPath()));
+		final PhotoItem photoItem = getItem(position);
+		iv.setImageBitmap(PhotoUtils.getPhotoBitmap(activity, cellWidth, cellHeight, photoItem.getPath()));
         //iv.setTag(id);
+		
+		rootView.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ShowFragmentAction action = ShowFragmentAction.PHOTO;
+				action.setAddBackStack(true);
+				action.setData(photoItem);
+				EventBus.getDefault().post(action);
+			}
+		});
 
         return rootView;
     }

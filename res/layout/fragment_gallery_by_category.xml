@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/background_light1"
+    >
+
+    <ExpandableListView
+        android:id="@+id/gallery_expandable_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/photo_button"
+        android:overScrollMode="never"
+        android:animateLayoutChanges="true"
+        />
+    
+    <com.sevendesign.planitprom.ui.customviews.CustomFontButton
+         style="@style/AppBaseTheme.Button"
+         android:id="@id/photo_button"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_margin="10dp"
+         android:text="@string/item_budget_take_picture"/>
+
+
+
+</RelativeLayout>

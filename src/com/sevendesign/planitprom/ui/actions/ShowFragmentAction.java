@@ -4,10 +4,11 @@ import com.sevendesign.planitprom.ui.fragments.BudgetFragment;
 import com.sevendesign.planitprom.ui.fragments.CalculatorFragment;
 import com.sevendesign.planitprom.ui.fragments.CategoryAddFragment;
 import com.sevendesign.planitprom.ui.fragments.DatePickerFragment;
+import com.sevendesign.planitprom.ui.fragments.GalleryByCategoryFragment;
 import com.sevendesign.planitprom.ui.fragments.GalleryDetailsFragment;
-import com.sevendesign.planitprom.ui.fragments.GalleryFragment;
-import com.sevendesign.planitprom.ui.fragments.PromBudgetFragment;
 import com.sevendesign.planitprom.ui.fragments.ItemBudgetFragment;
+import com.sevendesign.planitprom.ui.fragments.PhotoFragment;
+import com.sevendesign.planitprom.ui.fragments.PromBudgetFragment;
 import com.sevendesign.planitprom.ui.fragments.SettingsFragment;
 import com.sevendesign.planitprom.ui.fragments.SplashScreenFragment;
 import com.sevendesign.planitprom.ui.fragments.ThemeSetupFragment;
@@ -27,8 +28,9 @@ public enum ShowFragmentAction {
     TIPS(TipsFragment.TAG, false),
     TIP_DETAILS(TipDetailsFragment.TAG, false),
     TIMELINE(TimelineFragment.TAG, false),
-    GALLERY(GalleryFragment.TAG, false),
+	GALLERY(GalleryByCategoryFragment.TAG, false),
     GALLERY_DETAILS(GalleryDetailsFragment.TAG, false),
+	PHOTO(PhotoFragment.TAG, false),
     CATEGORY_ADD(CategoryAddFragment.TAG, false),
     EVENT_DATE_PICKER(DatePickerFragment.TAG, false),
     RETURN_DATE_PICKER(DatePickerFragment.TAG, false);

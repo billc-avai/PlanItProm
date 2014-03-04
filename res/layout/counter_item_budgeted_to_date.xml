@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        >
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/counter_item_budgeted_title"
+            android:textSize="@dimen/counter_item_days_remain_title"
+            android:textColor="@color/text_light"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+    <com.sevendesign.planitprom.ui.customviews.CustomFontTextView
+            android:id="@+id/counter_item_budgeted_value_text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/counter_item_days_remain_value"
+            />
+
+</LinearLayout>

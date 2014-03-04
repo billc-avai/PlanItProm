@@ -159,6 +159,37 @@ public class DbManager {
         }
         return id;
     }
+	
+	public float getBudgetedToDate(int budgetId) {
+		float budgetedToDate = 0f;
+		
+		String sql = "SELECT " + CategoriesTableEntries.PLANNED_CATEGORY + " FROM " +
+				CategoriesTableEntries.TABLE_NAME + " WHERE " +
+				CategoriesTableEntries.BUDGET_ID + "=" + budgetId;
+		
+		Cursor cursor = dataAdapter.rawQuery(sql, null);
+		
+		if (cursor == null) {
+			return budgetedToDate;
+		}
+		
+		if (!cursor.moveToFirst()) {
+			cursor.close();
+			return budgetedToDate;
+		}
+		
+		do {
+			String budgetedString = cursor.getString(0);
+			
+			try {
+				budgetedToDate += Float.valueOf(budgetedString);
+			} catch (NumberFormatException e) {
+				e.printStackTrace();
+			}
+		} while (cursor.moveToNext());
+
+		return budgetedToDate;
+	}
 
     public List<PhotoItem> getPhotoItems() {
         Cursor cursor = dataAdapter.query(PhotosTableEntries.TABLE_NAME, PhotosTableEntries.ALL_COLUMN_NAMES, null, null, null, null, null);

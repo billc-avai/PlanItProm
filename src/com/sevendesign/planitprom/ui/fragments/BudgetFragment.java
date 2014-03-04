@@ -22,7 +22,9 @@ import com.sevendesign.planitprom.ui.widgets.PageControl;
 import com.sevendesign.planitprom.utils.Dialogs;
 
 public class BudgetFragment extends Fragment {
-    public static final String TAG = "BudgetFragment";
+	private static final int BUDGET_COUNTER_PAGE_COUNT = 3;
+
+	public static final String TAG = "BudgetFragment";
 
     private ViewPager counterPager;
     int counterCurrentPage = 0;
@@ -63,7 +65,7 @@ public class BudgetFragment extends Fragment {
     }
 
     private void fillCounterPages() {
-		counterPageControl.setPageCount(2);
+		counterPageControl.setPageCount(BUDGET_COUNTER_PAGE_COUNT);
 		counterPageControl.setActiveDrawable(getResources().getDrawable(R.drawable.bullet_selected));
 		counterPageControl.setInactiveDrawable(getResources().getDrawable(R.drawable.bullet_not_selected));
         counterPager.setCurrentItem(counterCurrentPage);
